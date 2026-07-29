@@ -8,7 +8,7 @@ export function Services() {
       <Reveal>
         <p className="font-mono text-xs tracking-[0.28em] text-signal uppercase">What we do</p>
         <h2 className="mt-4 max-w-3xl font-display text-4xl leading-tight font-bold tracking-tight md:text-6xl">
-          Ten ways to be heard.
+          Eleven ways to be heard.
         </h2>
       </Reveal>
 

@@ -9,6 +9,7 @@ import { SceneAerial } from './SceneAerial'
 import { SceneGlitch } from './SceneGlitch'
 import { SceneShield } from './SceneShield'
 import { SceneFocus } from './SceneFocus'
+import { SceneBlocks } from './SceneBlocks'
 
 export const SCENES: Record<string, ComponentType<{ className?: string }>> = {
   dataflow: SceneDataflow,
@@ -21,4 +22,5 @@ export const SCENES: Record<string, ComponentType<{ className?: string }>> = {
   glitch: SceneGlitch,
   shield: SceneShield,
   focus: SceneFocus,
+  blocks: SceneBlocks,
 }

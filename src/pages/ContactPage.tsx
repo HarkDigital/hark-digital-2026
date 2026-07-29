@@ -16,6 +16,7 @@ const SERVICE_OPTIONS = [
   'Hack Remediation',
   'Website & Data Security',
   'ADA Accessibility',
+  'WordPress',
   'Something else',
 ]
 

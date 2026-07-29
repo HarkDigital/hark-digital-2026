@@ -494,4 +494,51 @@ export const SERVICE_CONTENT: Record<string, ServiceContent> = {
       },
     ],
   },
+
+  wordpress: {
+    metaDescription:
+      'WordPress experts in Philadelphia, custom builds, rescues, speed, and security. We fix white screens, hacked sites, plugin conflicts, and slow admin dashboards. Est. 2016.',
+    article: [
+      {
+        heading: 'Why WordPress sites break (it’s usually not WordPress)',
+        paragraphs: [
+          'WordPress powers around 43 percent of all websites, and its core software is solid, maintained by thousands of developers and patched constantly. The trouble almost never starts there. It starts in the ecosystem around it: a theme from 2019 nobody updated, thirty plugins from thirty different authors, cheap shared hosting straining under load, and a page builder stacking scripts on every page. WordPress doesn’t break; the pile of decisions bolted onto it does.',
+          'That is actually good news. Because the platform is everywhere, its failure modes are famous, and the fixes are well understood. The white screen of death, the update that took the site down, the admin dashboard that takes twelve seconds to load, the pharmacy spam in your Google results, we have seen each of these dozens of times, and none of them is a mystery. A decade of building, rescuing, and maintaining WordPress sites means the diagnosis is usually fast, and the cure is usually permanent.',
+        ],
+      },
+      {
+        heading: 'The problems that walk through our door most',
+        paragraphs: [
+          'Slowness leads the list: oversized images, no caching, bloated page builders like Elementor and Divi, and databases dragging years of revisions and orphaned tables. Close behind are plugin problems, conflicts after an update, abandoned plugins with known vulnerabilities, and five plugins doing the job of one. Then come the hacks: almost every compromised site we clean is WordPress running outdated software, because bots scan for known holes around the clock. And underneath it all, neglect, sites with no backups, no updates, and no one watching, one bad Tuesday away from disaster.',
+          'The pattern behind all of it is deferred maintenance. WordPress is not a build-it-and-forget-it platform; it is closer to a car, reliable for years if someone changes the oil. That is why every rescue we do ends the same way: current software, real off-site backups, monitoring, and a care plan, so the site that just got fixed stays fixed. Whether you need a new build, a rescue, or just someone to finally take the updates off your plate, that is the job.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Why is my WordPress site so slow?',
+        a: 'The usual culprits, in order: unoptimized images, no caching, a heavy page builder theme, too many plugins loading scripts on every page, a bloated database, and budget shared hosting. A short audit pinpoints which ones apply to your site; fixing the top two or three usually transforms it.',
+      },
+      {
+        q: 'Why does my WordPress site keep getting hacked?',
+        a: 'Almost always outdated software, an old plugin or theme with a publicly known vulnerability, sometimes paired with weak passwords. Bots probe thousands of sites a day for exactly these holes. A proper cleanup closes the entry point, and a care plan with prompt updates keeps it closed.',
+      },
+      {
+        q: 'My site broke after a WordPress update. What do I do?',
+        a: 'Don’t keep clicking update on the rest. Note what changed, restore from a backup if you have one, and get help identifying the conflict, it is usually one plugin or theme incompatible with the new version. This is also the argument for staged updates with backups, which is exactly what our care plans do.',
+      },
+      {
+        q: 'Do you work with sites built in Elementor or Divi?',
+        a: 'Yes, constantly. We speed them up, fix them, and maintain them, and when a page builder is the main thing making a site slow, we say so with numbers. Sometimes the answer is tuning what you have; sometimes it is rebuilding on a lean theme. We tell you honestly which.',
+      },
+      {
+        q: 'Should I fix my WordPress site or rebuild it?',
+        a: 'Depends on the foundation. A solid site with fixable problems gets fixed, that is cheaper. A site on an abandoned theme, a fragile plugin stack, or years of accumulated patches is often cheaper to rebuild than to keep rescuing. We audit first and give you the honest math for both paths.',
+      },
+      {
+        q: 'Do you offer WordPress maintenance plans?',
+        a: 'Yes. Monthly care plans cover updates (applied with backups, not blindly), security monitoring, off-site backups, uptime checks, and small fixes, with a plain-English monthly report. It costs a fraction of a single emergency rescue, which is rather the point.',
+      },
+    ],
+  },
 }

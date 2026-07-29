@@ -49,14 +49,19 @@ export default function Service() {
   if (!page) return <Navigate to="/" replace />
 
   const Scene = SCENES[page.scene]
-  // size the hero headline to its length so long titles don't overflow
+  // size the hero headline to its length so long titles don't overflow;
+  // a single long unbreakable word (Syne caps are wide) forces the
+  // smallest mobile size regardless of total length
   const headlineText = `${page.headline} ${page.headlineAccent ?? ''}`.trim()
+  const longestWord = Math.max(...headlineText.split(/[\s-]+/).map(w => w.length))
   const headlineSize =
-    headlineText.length <= 22
-      ? 'text-[11vw] md:text-[5.6vw]'
-      : headlineText.length <= 34
-        ? 'text-[9vw] md:text-[4.5vw]'
-        : 'text-[7.5vw] md:text-[3.7vw]'
+    longestWord >= 10
+      ? 'text-[6.5vw] md:text-[3.7vw]'
+      : headlineText.length <= 22
+        ? 'text-[11vw] md:text-[5.6vw]'
+        : headlineText.length <= 34
+          ? 'text-[9vw] md:text-[4.5vw]'
+          : 'text-[7.5vw] md:text-[3.7vw]'
   const related = WORK.filter(w => w.tags.some(t => page.relatedTags.includes(t))).slice(0, 3)
   const prev = SERVICE_PAGES[(index - 1 + SERVICE_PAGES.length) % SERVICE_PAGES.length]
   const next = SERVICE_PAGES[(index + 1) % SERVICE_PAGES.length]

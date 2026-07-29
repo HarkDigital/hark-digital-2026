@@ -28,7 +28,7 @@ npm run preview    # serve the production build locally
 - `/services/<slug>` — one page per service, each with its own themed canvas
   animation. Slugs: `software-development · web-design · ecommerce · seo-geo ·
   page-speed · ai-consulting · aerial-media · hack-remediation · security ·
-  ada-accessibility`.
+  ada-accessibility · wordpress`.
   Copy lives in `src/data/servicePages.ts`; the animations in `src/components/scenes/`.
   Aerial lives under Services (no standalone nav item or homepage section).
 - `/lab` — the **Logo Lab**: twelve particle interpretations of the logo mark, all
@@ -53,7 +53,7 @@ Everything lives in `src/lib/particles/` and `src/components/logo/`:
 
 ## Content lives in data files
 
-- `src/data/services.ts` — the ten services (home page list)
+- `src/data/services.ts` — the eleven services (home page list)
 - `src/data/servicePages.ts` — full copy for each service page (headline, features, process, stats, CTA)
 - `src/data/work.ts` — all 15 portfolio items (flip `featured` to promote/demote a card)
 - `src/data/testimonials.ts` — client quotes (from the old site's reviews)

@@ -8,6 +8,7 @@ const ITEMS = [
   'Hack Remediation',
   'Data Security',
   'ADA Accessibility',
+  'WordPress',
 ]
 
 function Strip() {

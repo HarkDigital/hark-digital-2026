@@ -2,7 +2,7 @@ export interface ServicePageData {
   slug: string
   num: string
   title: string
-  scene: 'dataflow' | 'blueprint' | 'commerce' | 'radar' | 'velocity' | 'neural' | 'aerial' | 'glitch' | 'shield' | 'focus'
+  scene: 'dataflow' | 'blueprint' | 'commerce' | 'radar' | 'velocity' | 'neural' | 'aerial' | 'glitch' | 'shield' | 'focus' | 'blocks'
   headline: string
   /** part of the headline rendered in the signal color */
   headlineAccent?: string
@@ -396,5 +396,41 @@ export const SERVICE_PAGES: ServicePageData[] = [
     stat: { value: '1 in 4', label: 'American adults live with a disability. Not an edge case, your audience.' },
     relatedTags: ['Web Design'],
     cta: 'Unplug your mouse and try to use your website. Stuck? Talk to us.',
+  },
+  {
+    slug: 'wordpress',
+    num: '11',
+    title: 'WordPress',
+    scene: 'blocks',
+    headline: 'WordPress, without the',
+    headlineAccent: 'headaches.',
+    lede: 'WordPress runs over forty percent of the web, which means most of the slow, broken, hacked sites that land on our desk are WordPress too. After a decade inside it, we know exactly where it goes wrong, and how to make it boring, fast, and dependable.',
+    features: [
+      {
+        title: 'Builds done right',
+        text: 'Lean custom themes instead of a 40-plugin pileup. Fast, editable, and free of the page-builder bloat that slows everything down.',
+      },
+      {
+        title: 'Plugin rescue',
+        text: 'Conflicts, abandonware, and five plugins doing one job. We audit the pile, keep what earns its place, and replace the rest.',
+      },
+      {
+        title: 'Speed & Core Web Vitals',
+        text: 'WordPress can be genuinely fast. Caching, image optimization, database cleanup, and theme surgery until the scores go green.',
+      },
+      {
+        title: 'Hardening & care plans',
+        text: 'Most hacked sites we clean are WordPress running old plugins. Updates, backups, and monitoring, handled monthly so it never gets there.',
+      },
+    ],
+    process: [
+      { title: 'Audit', text: 'Theme, plugins, hosting, and database, reviewed and returned as a plain-English report of what’s hurting you.' },
+      { title: 'Stabilize', text: 'Updates applied, backups running, security holes closed, the bleeding stops before the tuning starts.' },
+      { title: 'Fix & speed up', text: 'Plugin cleanup, theme fixes, and performance work, or an honest recommendation to rebuild when rescue costs more.' },
+      { title: 'Care plan', text: 'Monthly updates, monitoring, and small fixes so the site stays fast and patched without you thinking about it.' },
+    ],
+    stat: { value: '43%', label: 'Of the web runs on WordPress. Its problems are common, so are the fixes.' },
+    relatedTags: ['Web Design'],
+    cta: 'White screen? Weird redirects? Admin slower than dial-up? Tell us what WordPress is doing to you.',
   },
 ]

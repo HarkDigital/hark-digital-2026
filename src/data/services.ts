@@ -87,4 +87,12 @@ export const SERVICES: Service[] = [
       'One in four American adults lives with a disability. We audit and fix your site to WCAG standards, so every visitor can use it and ADA demand letters have nothing to find.',
     tags: ['WCAG Audits', 'Remediation', 'Screen Reader Testing', 'ADA Compliance'],
   },
+  {
+    num: '11',
+    slug: 'wordpress',
+    title: 'WordPress',
+    blurb:
+      'Powering over forty percent of the web, and most of its headaches. We build, rescue, speed up, and secure WordPress sites, and we’ve seen every way they break.',
+    tags: ['Custom Builds', 'Plugin Rescue', 'Speed & Security', 'Care Plans'],
+  },
 ]
