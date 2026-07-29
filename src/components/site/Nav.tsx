@@ -64,7 +64,7 @@ function ServicesDropdown() {
             </Link>
           ))}
           <a
-            href="/#services"
+            href={`${import.meta.env.BASE_URL}#services`}
             onClick={() => setOpen(false)}
             className="block bg-ink-2 px-5 py-3 text-center font-mono text-[10px] tracking-[0.2em] text-muted uppercase transition-colors hover:text-signal"
           >
@@ -104,12 +104,12 @@ export function Nav() {
         )}
       >
         <nav className="mx-auto flex max-w-[1400px] items-center justify-between px-5 py-4 md:px-10">
-          <a href="/#top" className="group flex items-center gap-3">
+          <Link to="/" className="group flex items-center gap-3">
             <LogoMark className="h-8 w-8 text-paper transition-colors duration-300 group-hover:text-signal" />
             <span className="font-display text-sm font-bold tracking-[0.18em] uppercase">
               Hark<span className="text-signal">.</span><span className="text-muted">Digital</span>
             </span>
-          </a>
+          </Link>
 
           <div className="hidden items-center gap-8 md:flex">
             <Link
@@ -126,7 +126,7 @@ export function Nav() {
               Insights
             </Link>
             <a
-              href="/#voices"
+              href={`${import.meta.env.BASE_URL}#voices`}
               className="font-mono text-xs tracking-[0.18em] text-muted uppercase transition-colors hover:text-signal"
             >
               Clients
@@ -204,7 +204,7 @@ export function Nav() {
           Insights
         </Link>
         <a
-          href="/#voices"
+          href={`${import.meta.env.BASE_URL}#voices`}
           onClick={() => setOpen(false)}
           className="border-b border-line py-4 font-display text-3xl font-bold"
         >
