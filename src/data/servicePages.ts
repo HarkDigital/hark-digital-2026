@@ -1,0 +1,400 @@
+export interface ServicePageData {
+  slug: string
+  num: string
+  title: string
+  scene: 'dataflow' | 'blueprint' | 'commerce' | 'radar' | 'velocity' | 'neural' | 'aerial' | 'glitch' | 'shield' | 'focus'
+  headline: string
+  /** part of the headline rendered in the signal color */
+  headlineAccent?: string
+  lede: string
+  features: { title: string; text: string }[]
+  process: { title: string; text: string }[]
+  stat: { value: string; label: string }
+  /** matches tags in work.ts to surface related projects */
+  relatedTags: string[]
+  quote?: { text: string; name: string; company: string }
+  cta: string
+}
+
+export const SERVICE_PAGES: ServicePageData[] = [
+  {
+    slug: 'software-development',
+    num: '01',
+    title: 'Software Development',
+    scene: 'dataflow',
+    headline: 'Off-the-shelf never quite',
+    headlineAccent: 'fits.',
+    lede: 'We build custom software that helps your company create, collect, and manage its data, portals, dashboards, payment systems, and integrations shaped around how you actually work, not how a vendor thinks you should.',
+    features: [
+      {
+        title: 'Client & customer portals',
+        text: 'Give your customers a place to log in, pay invoices, upload files, and track progress, branded, secure, and yours.',
+      },
+      {
+        title: 'Dashboards & data management',
+        text: 'Collect it once, see it clearly. We wire your data sources into dashboards that answer the questions you actually ask.',
+      },
+      {
+        title: 'Integrations & APIs',
+        text: 'Your CRM, your accounting, your website, talking to each other instead of at you. We connect the tools you already use.',
+      },
+      {
+        title: 'Workflow automation',
+        text: 'Repetitive work is a software problem. We automate the busywork so your team can do the parts humans are good at.',
+      },
+    ],
+    process: [
+      { title: 'Listen', text: 'We map how work actually flows through your business, not how the org chart says it does.' },
+      { title: 'Prototype', text: 'A clickable model in weeks, not months. You react to something real before we build the real thing.' },
+      { title: 'Build', text: 'Short cycles, working software at every step. No year-long black box.' },
+      { title: 'Support', text: 'We stay after launch, updates, tweaks, and the next idea when you’re ready.' },
+    ],
+    stat: { value: '2016', label: 'Building software for real businesses since' },
+    relatedTags: ['Software'],
+    quote: {
+      text: 'We needed a stand-alone payment portal for our fast-growing business. Mike built it on time, on budget, trained us, and followed up to make sure everything ran smooth.',
+      name: 'Pete Rose',
+      company: 'The Home Hero',
+    },
+    cta: 'Tell us what your spreadsheets are doing the hard way.',
+  },
+  {
+    slug: 'web-design',
+    num: '02',
+    title: 'Web Design',
+    scene: 'blueprint',
+    headline: 'Beautiful. Functional.',
+    headlineAccent: 'Yours.',
+    lede: 'Your website is your hardest-working employee, it never sleeps and never calls out. We design sites that look incredible, load fast, and turn visitors into customers on every device.',
+    features: [
+      {
+        title: 'Design that converts',
+        text: 'Pretty is table stakes. Every layout decision points visitors toward the thing you want them to do next.',
+      },
+      {
+        title: 'Easy to update',
+        text: 'You own your content. We build on a CMS you can actually use, and we train you before we hand over the keys.',
+      },
+      {
+        title: 'Responsive by default',
+        text: 'Phone, tablet, ultrawide monitor, one site that feels made for every screen, because it is.',
+      },
+      {
+        title: 'Built to be found',
+        text: 'Clean structure, fast load times, and SEO fundamentals baked in from day one, not bolted on after.',
+      },
+    ],
+    process: [
+      { title: 'Listen', text: 'Your goals, your customers, your voice. The site has to sound like you, hark means listen, and we do.' },
+      { title: 'Design', text: 'Concepts you can react to, refined together until it feels right.' },
+      { title: 'Build', text: 'Modern frameworks, accessible markup, and speed as a feature.' },
+      { title: 'Launch & teach', text: 'We go live, then teach your team to run it. Support doesn’t end at launch.' },
+    ],
+    stat: { value: '15', label: 'Live projects in the portfolio right now' },
+    relatedTags: ['Web Design'],
+    quote: {
+      text: 'Mike has exceptional technical ability but at his core he is an artist. He brilliantly created a clean, concise and modern website that has significantly bolstered our business.',
+      name: 'Andrew Fabbri',
+      company: 'Fabbri Builders',
+    },
+    cta: 'Embarrassed by your current site? Let’s fix that.',
+  },
+  {
+    slug: 'ecommerce',
+    num: '03',
+    title: 'Ecommerce',
+    scene: 'commerce',
+    headline: 'Open 24/7. Even when',
+    headlineAccent: 'you’re not.',
+    lede: 'From a thousand-product catalog to a single "pay invoice" button, we build stores that are secure, fast, and easy to run, with the analytics to see what’s selling and why.',
+    features: [
+      {
+        title: 'Stores of any size',
+        text: 'Selling three products or three thousand, the store fits the catalog, not the other way around.',
+      },
+      {
+        title: 'Payment portals',
+        text: 'Service businesses deserve online payments too. Deposits, invoices, and recurring billing without the phone tag.',
+      },
+      {
+        title: 'Secure by default',
+        text: 'SSL, hardened checkout, and payment processors that never let card numbers touch your server.',
+      },
+      {
+        title: 'Analytics & insight',
+        text: 'Track sales and trends, spot your best sellers, and make decisions from data instead of gut feel.',
+      },
+    ],
+    process: [
+      { title: 'Listen', text: 'What you sell, who buys it, and where the friction is today.' },
+      { title: 'Plan the catalog', text: 'Products, variations, shipping, tax, structured right the first time.' },
+      { title: 'Build & connect', text: 'Store, payments, shipping, and your back office, all talking to each other.' },
+      { title: 'Grow', text: 'Conversion tuning, seasonal campaigns, and the numbers to prove what worked.' },
+    ],
+    stat: { value: '$1M+', label: 'Processed annually by client stores we built' },
+    relatedTags: ['Ecommerce'],
+    quote: {
+      text: 'Mike helped launch a successful holiday season campaign that brought us record number sales.',
+      name: 'Holly Kisby',
+      company: "Shriver's Salt Water Taffy",
+    },
+    cta: 'Your products are good. Let’s make buying them easy.',
+  },
+  {
+    slug: 'seo-geo',
+    num: '04',
+    title: 'SEO / GEO',
+    scene: 'radar',
+    headline: 'Be the',
+    headlineAccent: 'answer.',
+    lede: 'Search engine optimization gets you found by people. Generative engine optimization gets you cited by AI. Your next customer is asking a question right now, we make sure you’re the answer, in Google and in ChatGPT.',
+    features: [
+      {
+        title: 'Technical SEO',
+        text: 'Speed, structure, and clean markup, the foundation search engines reward and visitors feel.',
+      },
+      {
+        title: 'Local SEO',
+        text: 'Own your map pin. For Philadelphia businesses, showing up in "near me" searches is the whole game.',
+      },
+      {
+        title: 'Content strategy',
+        text: 'Pages that answer real questions your customers actually type, written for humans, structured for machines.',
+      },
+      {
+        title: 'GEO & AI discoverability',
+        text: 'AI assistants are the new front page. We structure your expertise so they quote you, not your competitor.',
+      },
+    ],
+    process: [
+      { title: 'Audit', text: 'Where you rank, why you don’t, and what AI currently says about you. Eye-opening, usually.' },
+      { title: 'Fix the foundation', text: 'Technical issues first, no amount of content outruns a slow, broken site.' },
+      { title: 'Publish with purpose', text: 'Content mapped to real queries, shipped on a schedule you can sustain.' },
+      { title: 'Measure & compound', text: 'Rankings, traffic, citations. SEO is compound interest, we keep it compounding.' },
+    ],
+    stat: { value: 'Page 1', label: 'Is the goal. Everything else is a participation trophy.' },
+    relatedTags: ['SEO'],
+    cta: 'Google yourself. If you didn’t like what you saw, talk to us.',
+  },
+  {
+    slug: 'page-speed',
+    num: '05',
+    title: 'Page Speed',
+    scene: 'velocity',
+    headline: 'Slow is the new',
+    headlineAccent: 'broken.',
+    lede: 'A slow site loses customers before it can say hello. We find what is dragging you down, fix it, and turn those red PageSpeed and GTmetrix scores green, with load times measured in milliseconds instead of seconds.',
+    features: [
+      {
+        title: 'Core Web Vitals',
+        text: 'LCP, INP, and CLS are Google ranking factors. We get all three into the green so search rewards your site instead of burying it.',
+      },
+      {
+        title: 'PageSpeed & GTmetrix',
+        text: 'We chase the exact issues those tools flag, oversized images, heavy scripts, render-blocking code, missing caching, until the numbers turn green and stay there.',
+      },
+      {
+        title: 'Fast on real phones',
+        text: 'Lab scores are easy; a cheap Android on cell data is the real test. We optimize for the visitor you are actually losing, not just your fast laptop.',
+      },
+      {
+        title: 'Speed that lasts',
+        text: 'Sites rot as plugins and content pile up. We set up caching, compression, a CDN, and monitoring so it stays fast long after we leave.',
+      },
+    ],
+    process: [
+      { title: 'Measure', text: 'A real audit across PageSpeed, GTmetrix, and field data, so we fix what actually costs you, not what merely looks scary.' },
+      { title: 'Fix the heavy hitters', text: 'Bloated images, oversized scripts, render-blocking CSS, and slow hosting, tackled in order of impact.' },
+      { title: 'Tune & cache', text: 'Compression, lazy-loading, a CDN, and smart caching so repeat visits feel instant.' },
+      { title: 'Verify', text: 'We re-test on real devices and hand you the before-and-after scores in writing.' },
+    ],
+    stat: { value: '90+', label: 'Green Core Web Vitals scores, the target on every project' },
+    relatedTags: ['SEO'],
+    cta: 'Run your homepage through PageSpeed Insights. Not happy with the number? Let us fix it.',
+  },
+  {
+    slug: 'ai-consulting',
+    num: '06',
+    title: 'AI Consulting',
+    scene: 'neural',
+    headline: 'AI without the',
+    headlineAccent: 'snake oil.',
+    lede: 'Every vendor is suddenly an AI company. We help you cut through it, finding the places where AI genuinely saves your business time and money, wiring it into your workflow, and skipping the hype entirely.',
+    features: [
+      {
+        title: 'Opportunity audit',
+        text: 'We map your workflows and show you exactly where AI helps, and where it honestly doesn’t. Plain English, no buzzwords.',
+      },
+      {
+        title: 'Custom AI tools',
+        text: 'Assistants trained on your documents, quote generators, intake bots, built for your business, not rented from a demo.',
+      },
+      {
+        title: 'Workflow automation',
+        text: 'Connect AI to the tools you already use so the paperwork writes itself while you sleep.',
+      },
+      {
+        title: 'AI-ready presence',
+        text: 'Paired with our GEO work: make sure AI assistants describe your business accurately, and recommend you.',
+      },
+    ],
+    process: [
+      { title: 'Audit', text: 'A short, honest look at your operations. You get a map of what’s worth automating and what isn’t.' },
+      { title: 'Pilot', text: 'One small, measurable win first. If it doesn’t save time or money, we stop there.' },
+      { title: 'Integrate', text: 'The pilot graduates into your real workflow, connected, secured, and documented.' },
+      { title: 'Train your team', text: 'Your people learn to drive it. AI that only the consultant understands is a liability.' },
+    ],
+    stat: { value: 'Hours', label: 'Back in your week, the only AI metric that matters' },
+    relatedTags: ['Software'],
+    cta: 'Curious what AI could actually do for your business? Ask us for the honest version.',
+  },
+  {
+    slug: 'aerial-media',
+    num: '07',
+    title: 'Aerial Photography & Video',
+    scene: 'aerial',
+    headline: 'Your business, from',
+    headlineAccent: '400 feet.',
+    lede: 'Mike is an FAA Part 107 licensed remote pilot, legal, insured, professional drone work. Cinematic aerials that sell listings faster, keep job sites honest, and stop the scroll on any feed.',
+    features: [
+      {
+        title: 'Real estate',
+        text: 'Listings with aerial photos sell faster. Show the property, the lot, and the neighborhood in one frame.',
+      },
+      {
+        title: 'Construction progress',
+        text: 'Weekly flyovers turn "how’s the site coming?" into a photo timeline your clients and lenders love.',
+      },
+      {
+        title: 'Inspections',
+        text: 'Roofs, towers, and gutters without ladders or lifts. High-resolution imagery, zero risk.',
+      },
+      {
+        title: 'Cinematic production',
+        text: '4K aerial video for brand films, events, and action sports, footage that makes people stop scrolling.',
+      },
+    ],
+    process: [
+      { title: 'Scout & clear', text: 'Airspace checks, permissions, and weather windows, handled before flight day.' },
+      { title: 'Fly', text: 'Licensed, insured, and planned shot lists. Professional in the air and on the ground.' },
+      { title: 'Edit', text: 'Color-graded photo and video, cut for where it will live, web, social, or the big screen.' },
+      { title: 'Deliver', text: 'Web-ready files sized for your site and socials, with full-resolution masters included.' },
+    ],
+    stat: { value: '107', label: 'FAA Part licensed & insured remote pilot' },
+    relatedTags: ['Photography'],
+    cta: 'See your business the way birds do.',
+  },
+  {
+    slug: 'hack-remediation',
+    num: '08',
+    title: 'Hack Remediation',
+    scene: 'glitch',
+    headline: 'Breathe. Then',
+    headlineAccent: 'call us.',
+    lede: 'Defaced homepage, spam redirects, Google’s red warning screen, a hacked site feels like a break-in. We find the breach, remove the infection, restore your site, and lock the door on the way out.',
+    features: [
+      {
+        title: 'Emergency response',
+        text: 'Fast triage to contain the damage. Every hour a hacked site stays up costs you trust and traffic.',
+      },
+      {
+        title: 'Malware removal',
+        text: 'We find every backdoor, injected script, and rogue admin account, and the hole they came through.',
+      },
+      {
+        title: 'Blocklist removal',
+        text: 'We clear the "this site may be hacked" warnings from Google Safe Browsing and get your reputation back.',
+      },
+      {
+        title: 'Post-breach hardening',
+        text: 'The cleanup ends with a locked door: patched software, tightened permissions, and monitoring in place.',
+      },
+    ],
+    process: [
+      { title: 'Triage', text: 'Assess the damage, contain the spread, and preserve the evidence.' },
+      { title: 'Clean', text: 'Remove the infection completely, not just the visible symptoms.' },
+      { title: 'Restore', text: 'Back online, blocklists cleared, customers none the wiser.' },
+      { title: 'Harden', text: 'Close the hole it came through and watch the door so it never happens twice.' },
+    ],
+    stat: { value: 'Now', label: 'The right time to deal with a hacked site' },
+    relatedTags: ['Security'],
+    quote: {
+      text: 'Very excited to have worked with Mike to get our website totally fixed after a disaster experience with TWO other developers. In one month, he turned around a website that fits our needs.',
+      name: 'Barbara Barber',
+      company: 'CrossFit Off The Grid',
+    },
+    cta: 'Hacked right now? Skip the form. Email mike@hark.digital with "EMERGENCY" in the subject.',
+  },
+  {
+    slug: 'security',
+    num: '09',
+    title: 'Website & Data Security',
+    scene: 'shield',
+    headline: 'The best hack is the one that',
+    headlineAccent: 'never happens.',
+    lede: 'Security isn’t a product, it’s a habit. We harden your website and the data behind it, updates, monitoring, backups, and SSL, handled before problems become headlines.',
+    features: [
+      {
+        title: 'Hardening',
+        text: 'Locked-down logins, least-privilege accounts, and a smaller attack surface from day one.',
+      },
+      {
+        title: 'Monitoring & alerts',
+        text: 'Round-the-clock watch for file changes, suspicious logins, and downtime, with a human who responds.',
+      },
+      {
+        title: 'Backups that restore',
+        text: 'A backup you’ve never tested is a hope, not a plan. Ours restore, we rehearse it.',
+      },
+      {
+        title: 'Updates & patching',
+        text: 'Most breaches walk through known holes. We keep your software patched before attackers try the handle.',
+      },
+    ],
+    process: [
+      { title: 'Assess', text: 'A plain-English security review of your site, hosting, and data handling.' },
+      { title: 'Harden', text: 'Fix the weak points, access, software, configuration, and encryption.' },
+      { title: 'Monitor', text: 'Continuous watch, because attackers don’t keep business hours.' },
+      { title: 'Report', text: 'A monthly summary a business owner can actually read. No jargon, no scare tactics.' },
+    ],
+    stat: { value: '24/7', label: 'Monitoring, attackers don’t keep business hours' },
+    relatedTags: ['Security'],
+    cta: 'Sleep better. Put someone on watch.',
+  },
+  {
+    slug: 'ada-accessibility',
+    num: '10',
+    title: 'ADA Accessibility',
+    scene: 'focus',
+    headline: 'Every visitor.',
+    headlineAccent: 'No exceptions.',
+    lede: 'One in four American adults lives with a disability, and courts treat your website like a storefront, ramps required. We audit, fix, and monitor your site to WCAG standards, so everyone can use it and demand letters find nothing.',
+    features: [
+      {
+        title: 'Real WCAG audits',
+        text: 'Automated scans catch maybe a third of the problems. We test the rest by hand, keyboard only, screen reader on, zoomed to 200%, mapped to WCAG 2.2.',
+      },
+      {
+        title: 'Fixes, not overlays',
+        text: 'Accessibility widgets don’t make sites accessible, and plaintiffs’ lawyers know it. We fix the actual code: contrast, labels, structure, and focus.',
+      },
+      {
+        title: 'Demand-letter defense',
+        text: 'Thousands of ADA website lawsuits are filed every year, and small businesses are the easy targets. Documented conformance makes yours a hard one.',
+      },
+      {
+        title: 'Accessible from day one',
+        text: 'On new builds, accessibility is baked into the design and markup from the first wireframe, cheaper than retrofitting and better for SEO too.',
+      },
+    ],
+    process: [
+      { title: 'Audit', text: 'Automated scans plus real assistive-technology testing, returned as a plain-English list ranked by severity and legal risk.' },
+      { title: 'Fix', text: 'We remediate the code itself, markup, contrast, labels, and focus order. No overlay widgets, no band-aids.' },
+      { title: 'Verify', text: 'Re-tested the way real users actually browse: keyboard only, screen reader on, text enlarged, motion reduced.' },
+      { title: 'Document & monitor', text: 'An accessibility statement, a conformance record, and monitoring so new content doesn’t quietly undo the work.' },
+    ],
+    stat: { value: '1 in 4', label: 'American adults live with a disability. That’s your audience.' },
+    relatedTags: ['Web Design'],
+    cta: 'Unplug your mouse and try to use your website. Stuck? Talk to us.',
+  },
+]

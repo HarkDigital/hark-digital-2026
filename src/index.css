@@ -1,0 +1,122 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/syne';
+@import '@fontsource-variable/instrument-sans';
+@import '@fontsource/archivo-black/400.css';
+
+@theme {
+  --color-ink: #0d0d0d;
+  --color-ink-2: #151515;
+  --color-ink-3: #1c1c1c;
+  --color-paper: #ffffff;
+  --color-muted: #9a9a9a;
+  --color-line: rgba(255, 255, 255, 0.1);
+  --color-signal: #00ff85;
+  --color-signal-dim: rgba(0, 255, 133, 0.14);
+
+  --font-display: 'Syne Variable', sans-serif;
+  --font-sans: 'Instrument Sans Variable', system-ui, sans-serif;
+  --font-mono: 'Archivo Black', sans-serif;
+
+  --animate-marquee: marquee 36s linear infinite;
+  --animate-marquee-reverse: marquee-reverse 42s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes marquee-reverse {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  /* keep anchored sections clear of the fixed header */
+  scroll-padding-top: 90px;
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--color-signal);
+  color: var(--color-ink);
+}
+
+/* thin elegant scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-ink);
+}
+::-webkit-scrollbar-thumb {
+  background: #2c2c2c;
+  border-radius: 5px;
+  border: 2px solid var(--color-ink);
+}
+
+/* film grain overlay used site-wide */
+.grain::after {
+  content: '';
+  position: fixed;
+  inset: -50%;
+  width: 200%;
+  height: 200%;
+  pointer-events: none;
+  z-index: 60;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: grain-shift 0.9s steps(4) infinite;
+}
+
+@keyframes grain-shift {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-2%, 3%);
+  }
+  50% {
+    transform: translate(3%, -2%);
+  }
+  75% {
+    transform: translate(-3%, -3%);
+  }
+  100% {
+    transform: translate(2%, 2%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grain::after {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* outlined display text */
+.text-stroke {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.42);
+  color: transparent;
+}
+.text-stroke-signal {
+  -webkit-text-stroke: 1px rgba(0, 255, 133, 0.6);
+  color: transparent;
+}
