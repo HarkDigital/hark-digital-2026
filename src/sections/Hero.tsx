@@ -13,22 +13,22 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto w-full max-w-[1400px] px-5 py-24 md:px-10">
         <Reveal>
-          <h1 className="text-center font-display text-[11vw] leading-[0.95] font-extrabold tracking-tight text-balance uppercase [text-shadow:0_2px_14px_rgba(13,13,13,0.9),0_0_40px_rgba(13,13,13,0.65)] md:text-[min(7.5vw,9rem)]">
+          <h1 className="text-center font-display text-[11vw] leading-[0.95] font-extrabold tracking-tight text-balance uppercase [text-shadow:0_3px_18px_rgba(13,13,13,1),0_0_60px_rgba(13,13,13,0.9)] md:text-[min(7.5vw,9rem)]">
             Make the internet{' '}
-            <span className="text-signal italic">listen.</span>
+            <span className="italic">listen.</span>
           </h1>
         </Reveal>
         <Reveal delay={0.15}>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
               href="#work"
-              className="rounded-full bg-signal px-7 py-3 font-mono text-xs font-medium tracking-[0.18em] text-ink uppercase transition-transform hover:scale-105"
+              className="rounded-full bg-signal px-7 py-3 font-mono text-xs font-medium tracking-[0.18em] text-ink uppercase shadow-[0_6px_28px_rgba(13,13,13,0.9)] transition-transform hover:scale-105"
             >
               See the work ↓
             </a>
             <Link
               to="/contact"
-              className="rounded-full border border-paper/25 px-7 py-3 font-mono text-xs tracking-[0.18em] uppercase transition-colors hover:border-signal hover:text-signal"
+              className="rounded-full bg-paper px-7 py-3 font-mono text-xs font-medium tracking-[0.18em] text-ink uppercase shadow-[0_6px_28px_rgba(13,13,13,0.9)] transition-transform hover:scale-105"
             >
               Start a project
             </Link>
