@@ -7,8 +7,6 @@ import { Contact } from '@/sections/Contact'
 import { SCENES } from '@/components/scenes'
 import { SERVICE_PAGES } from '@/data/servicePages'
 import { SERVICE_CONTENT } from '@/data/serviceContent'
-import { WORK } from '@/data/work'
-import { asset } from '@/lib/utils'
 
 const DEFAULT_DESCRIPTION =
   'Hark Digital · software development, web design, ecommerce, SEO/GEO, security, ADA accessibility, and aerial media. From publicly traded companies to mom-and-pop pizza shops.'
@@ -62,7 +60,6 @@ export default function Service() {
         : headlineText.length <= 34
           ? 'text-[9vw] md:text-[4.5vw]'
           : 'text-[7.5vw] md:text-[3.7vw]'
-  const related = WORK.filter(w => w.tags.some(t => page.relatedTags.includes(t))).slice(0, 3)
   const prev = SERVICE_PAGES[(index - 1 + SERVICE_PAGES.length) % SERVICE_PAGES.length]
   const next = SERVICE_PAGES[(index + 1) % SERVICE_PAGES.length]
 
@@ -278,39 +275,6 @@ export default function Service() {
               </figcaption>
             </figure>
           </Reveal>
-        </section>
-      )}
-
-      {/* related work */}
-      {related.length > 0 && (
-        <section className="mx-auto max-w-[1400px] px-5 pb-24 md:px-10 md:pb-32">
-          <Reveal>
-            <p className="font-mono text-xs tracking-[0.28em] text-signal uppercase">In the wild</p>
-          </Reveal>
-          <div className="mt-8 grid gap-8 md:grid-cols-3">
-            {related.map((w, i) => (
-              <Reveal key={w.id} delay={i * 0.07}>
-                <a href={w.url} target="_blank" rel="noopener noreferrer" className="group block">
-                  <div className="overflow-hidden rounded-lg border border-line">
-                    <img
-                      src={asset(`work/${w.id}.webp`)}
-                      alt={`${w.name} website`}
-                      loading="lazy"
-                      className="aspect-[16/10] w-full object-cover transition-transform duration-700 group-hover:scale-[1.05]"
-                    />
-                  </div>
-                  <div className="mt-3 flex items-baseline justify-between gap-3">
-                    <h3 className="font-display text-lg font-bold tracking-tight transition-colors group-hover:text-signal">
-                      {w.name}
-                    </h3>
-                    <span className="shrink-0 font-mono text-[10px] tracking-[0.16em] text-muted uppercase">
-                      {w.industry}
-                    </span>
-                  </div>
-                </a>
-              </Reveal>
-            ))}
-          </div>
         </section>
       )}
 
