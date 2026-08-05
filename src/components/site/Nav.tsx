@@ -106,12 +106,12 @@ export function Nav() {
         <nav className="mx-auto flex max-w-[1400px] items-center justify-between px-5 py-4 md:px-10">
           <Link to="/" className="group flex items-center gap-3">
             <LogoMark className="h-8 w-8 text-paper transition-colors duration-300 group-hover:text-signal" />
-            <span className="font-display text-sm font-bold tracking-[0.18em] uppercase">
+            <span className="font-display text-xl font-bold tracking-[0.18em] uppercase sm:text-[1.75rem] lg:text-sm xl:text-[1.75rem]">
               Hark<span className="text-signal">.</span><span className="text-muted">Digital</span>
             </span>
           </Link>
 
-          <div className="hidden items-center gap-8 md:flex">
+          <div className="hidden items-center gap-8 lg:flex">
             <Link
               to="/work"
               className="font-mono text-xs tracking-[0.18em] text-muted uppercase transition-colors hover:text-signal"
@@ -147,7 +147,7 @@ export function Nav() {
 
           <button
             onClick={() => setOpen(!open)}
-            className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 md:hidden"
+            className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 lg:hidden"
             aria-label="Menu"
             aria-expanded={open}
           >
@@ -164,7 +164,7 @@ export function Nav() {
       {/* mobile menu */}
       <div
         className={cn(
-          'fixed inset-0 z-40 flex flex-col justify-center gap-2 overflow-y-auto bg-ink/95 px-8 py-24 backdrop-blur-lg transition-opacity duration-300 md:hidden',
+          'fixed inset-0 z-40 flex flex-col justify-center gap-2 overflow-y-auto bg-ink/95 px-8 py-24 backdrop-blur-lg transition-opacity duration-300 lg:hidden',
           // `invisible` also removes the closed menu's links from tab order & AT
           open ? 'opacity-100' : 'pointer-events-none invisible opacity-0'
         )}
