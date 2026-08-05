@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { LogoConstellation } from '@/components/logo/LogoConstellation'
+import { LogoGlow } from '@/components/logo/LogoGlow'
 import { LogoMark } from '@/components/site/LogoMark'
 import { Reveal } from '@/components/site/Reveal'
 
@@ -7,7 +7,7 @@ export function Contact() {
   return (
     <footer id="contact" className="relative overflow-hidden border-t border-line">
       {/* constellation mark drifting behind the CTA */}
-      <LogoConstellation className="absolute inset-0 opacity-45" windowPointer />
+      <LogoGlow className="absolute inset-0 opacity-45" windowPointer />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_20%,rgba(13,13,13,0.85)_100%)]" />
 
       <div className="relative z-10 mx-auto flex min-h-[80vh] max-w-[1400px] flex-col justify-between px-5 py-20 md:px-10">
