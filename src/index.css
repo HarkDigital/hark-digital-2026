@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 @import '@fontsource-variable/syne';
-@import '@fontsource-variable/instrument-sans';
+@import '@fontsource-variable/inter';
 @import '@fontsource/archivo-black/400.css';
 
 @theme {
@@ -14,7 +14,7 @@
   --color-signal-dim: rgba(0, 255, 133, 0.14);
 
   --font-display: 'Syne Variable', sans-serif;
-  --font-sans: 'Instrument Sans Variable', system-ui, sans-serif;
+  --font-sans: 'Inter Variable', system-ui, sans-serif;
   --font-mono: 'Archivo Black', sans-serif;
 
   --animate-marquee: marquee 36s linear infinite;
