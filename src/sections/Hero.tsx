@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
-import { LogoConstellation } from '@/components/logo/LogoConstellation'
+import { LogoSiphon } from '@/components/logo/LogoSiphon'
 import { Reveal } from '@/components/site/Reveal'
 
 export function Hero() {
   return (
     <section id="top" className="relative flex min-h-dvh flex-col justify-end overflow-hidden">
       {/* the mark, lit by the cursor — anywhere on screen */}
-      <LogoConstellation className="absolute inset-0" windowPointer />
+      <LogoSiphon className="absolute inset-0" windowPointer />
 
       {/* radial vignette so text stays readable */}
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_35%,rgba(13,13,13,0.72)_100%)]" />
