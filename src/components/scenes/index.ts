@@ -10,6 +10,7 @@ import { SceneGlitch } from './SceneGlitch'
 import { SceneShield } from './SceneShield'
 import { SceneFocus } from './SceneFocus'
 import { SceneBlocks } from './SceneBlocks'
+import { SceneSift } from './SceneSift'
 
 export const SCENES: Record<string, ComponentType<{ className?: string }>> = {
   dataflow: SceneDataflow,
@@ -23,4 +24,5 @@ export const SCENES: Record<string, ComponentType<{ className?: string }>> = {
   shield: SceneShield,
   focus: SceneFocus,
   blocks: SceneBlocks,
+  sift: SceneSift,
 }

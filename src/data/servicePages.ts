@@ -2,7 +2,7 @@ export interface ServicePageData {
   slug: string
   num: string
   title: string
-  scene: 'dataflow' | 'blueprint' | 'commerce' | 'radar' | 'velocity' | 'neural' | 'aerial' | 'glitch' | 'shield' | 'focus' | 'blocks'
+  scene: 'dataflow' | 'blueprint' | 'commerce' | 'radar' | 'velocity' | 'neural' | 'aerial' | 'glitch' | 'shield' | 'focus' | 'blocks' | 'sift'
   headline: string
   /** part of the headline rendered in the signal color */
   headlineAccent?: string
@@ -216,7 +216,7 @@ export const SERVICE_PAGES: ServicePageData[] = [
     slug: 'ai-consulting',
     num: '06',
     title: 'AI Consulting',
-    scene: 'neural',
+    scene: 'sift',
     headline: 'AI without the',
     headlineAccent: 'snake oil.',
     lede: 'Every vendor is suddenly an AI company. We help you cut through it, finding the places where AI genuinely saves your business time and money, wiring it into your workflow, and skipping the hype entirely.',
