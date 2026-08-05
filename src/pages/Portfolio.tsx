@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { AnimatePresence, motion, MotionConfig } from 'motion/react'
 import { Nav } from '@/components/site/Nav'
 import { Cursor } from '@/components/site/Cursor'
@@ -126,6 +127,12 @@ export default function Portfolio() {
               Every project here is live and in the wild, from global manufacturers to the family
               dentist down the street. Filter by what we did.
             </p>
+            <Link
+              to="/reel"
+              className="mt-4 inline-block font-mono text-xs tracking-[0.2em] text-signal uppercase transition-colors hover:text-paper"
+            >
+              Or watch the reel →
+            </Link>
           </Reveal>
 
           {/* filter bar */}

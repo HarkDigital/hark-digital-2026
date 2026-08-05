@@ -8,6 +8,7 @@ const Home = lazy(() => import('./pages/Home'))
 const Lab = lazy(() => import('./pages/Lab'))
 const Service = lazy(() => import('./pages/Service'))
 const Portfolio = lazy(() => import('./pages/Portfolio'))
+const Reel = lazy(() => import('./pages/Reel'))
 const ContactPage = lazy(() => import('./pages/ContactPage'))
 const Insights = lazy(() => import('./pages/Insights'))
 const InsightPost = lazy(() => import('./pages/InsightPost'))
@@ -33,6 +34,7 @@ const router = createBrowserRouter(
         { path: '/', element: <Home /> },
         { path: '/lab', element: <Lab /> },
         { path: '/work', element: <Portfolio /> },
+        { path: '/reel', element: <Reel /> },
         { path: '/contact', element: <ContactPage /> },
         { path: '/insights', element: <Insights /> },
         { path: '/insights/:slug', element: <InsightPost /> },
