@@ -83,7 +83,7 @@ export default function Service() {
           </Reveal>
           <Reveal delay={0.1}>
             <h1
-              className={`max-w-5xl font-display ${headlineSize} leading-[0.98] font-extrabold tracking-tight text-balance uppercase`}
+              className={`hero-shadow max-w-5xl font-display ${headlineSize} leading-[0.98] font-extrabold tracking-tight text-balance uppercase`}
             >
               {page.headline} {page.headlineAccent && <span className="text-signal italic">{page.headlineAccent}</span>}
             </h1>

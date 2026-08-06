@@ -13,13 +13,17 @@ interface Dot {
 const LINK_DIST = 120
 const REPEL_R = 150
 
+const ink = (a: number) => `rgba(13, 13, 13, ${a})`
+
 /**
- * HACK REMEDIATION — a particles.js-style network. Calm dots drift and
- * link up; the cursor pushes them away, an intruder the swarm keeps its
- * distance from. Breathe.
+ * A particles.js-style network. Calm dots drift and link up; the cursor
+ * pushes them away, and the swarm settles back once it moves on. The
+ * onSignal variant renders in ink for use on the green banner.
  */
-function createScene(): ParticleScene {
+function createScene(onSignal: boolean): ParticleScene {
   let dots: Dot[] = []
+  const base = onSignal ? ink : paper
+  const accent = onSignal ? paper : signal
 
   return {
     init(w, h) {
@@ -69,8 +73,8 @@ function createScene(): ParticleScene {
           const dy = a.y - b.y
           const dist = dx * dx + dy * dy
           if (dist < LINK_DIST * LINK_DIST) {
-            const alpha = (1 - Math.sqrt(dist) / LINK_DIST) * 0.22
-            ctx.strokeStyle = a.accent || b.accent ? signal(alpha * 1.4) : paper(alpha)
+            const alpha = (1 - Math.sqrt(dist) / LINK_DIST) * (onSignal ? 0.3 : 0.22)
+            ctx.strokeStyle = a.accent || b.accent ? accent(alpha * 1.4) : base(alpha)
             ctx.beginPath()
             ctx.moveTo(a.x, a.y)
             ctx.lineTo(b.x, b.y)
@@ -80,7 +84,7 @@ function createScene(): ParticleScene {
       }
 
       for (const d of dots) {
-        ctx.fillStyle = d.accent ? signal(0.85) : paper(0.55)
+        ctx.fillStyle = d.accent ? accent(0.9) : base(onSignal ? 0.65 : 0.55)
         ctx.beginPath()
         ctx.arc(d.x, d.y, d.r, 0, Math.PI * 2)
         ctx.fill()
@@ -89,10 +93,10 @@ function createScene(): ParticleScene {
   }
 }
 
-export function SceneNetwork({ className }: { className?: string }) {
+export function SceneNetwork({ className, onSignal = false }: { className?: string; onSignal?: boolean }) {
   return (
     <ParticleCanvas
-      createScene={createScene}
+      createScene={() => createScene(onSignal)}
       className={className}
       windowPointer
       ariaLabel="A calm network of drifting connected particles that scatter away from the cursor"

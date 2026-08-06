@@ -118,7 +118,7 @@ export default function Portfolio() {
         <section className="mx-auto max-w-[1400px] px-5 pt-32 pb-10 md:px-10 md:pt-40">
           <Reveal>
             <p className="font-mono text-xs tracking-[0.28em] text-signal uppercase">The portfolio</p>
-            <h1 className="mt-4 max-w-4xl font-display text-5xl leading-[0.95] font-extrabold tracking-tight uppercase md:text-8xl">
+            <h1 className="hero-shadow mt-4 max-w-4xl font-display text-5xl leading-[0.95] font-extrabold tracking-tight uppercase md:text-8xl">
               Proof, not <span className="text-signal italic">promises.</span>
             </h1>
           </Reveal>

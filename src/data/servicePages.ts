@@ -288,7 +288,7 @@ export const SERVICE_PAGES: ServicePageData[] = [
     slug: 'hack-remediation',
     num: '08',
     title: 'Hack Remediation',
-    scene: 'network',
+    scene: 'glitch',
     headline: 'Breathe. Then',
     headlineAccent: 'call us.',
     lede: 'Defaced homepage, spam redirects, Google’s red warning screen, a hacked site feels like a break-in. We find the breach, remove the infection, restore your site, and lock the door on the way out.',

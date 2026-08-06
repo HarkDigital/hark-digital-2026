@@ -38,7 +38,7 @@ export default function Insights() {
       <section className="mx-auto max-w-[1400px] px-5 pt-32 pb-10 md:px-10 md:pt-40">
         <Reveal>
           <p className="font-mono text-xs tracking-[0.28em] text-signal uppercase">Insights</p>
-          <h1 className="mt-4 max-w-4xl font-display text-6xl leading-[0.95] font-extrabold tracking-tight uppercase md:text-8xl">
+          <h1 className="hero-shadow mt-4 max-w-4xl font-display text-6xl leading-[0.95] font-extrabold tracking-tight uppercase md:text-8xl">
             Field <span className="text-signal italic">notes.</span>
           </h1>
         </Reveal>

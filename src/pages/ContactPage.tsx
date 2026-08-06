@@ -73,7 +73,7 @@ export default function ContactPage() {
         <div>
           <Reveal>
             <p className="font-mono text-xs tracking-[0.28em] text-signal uppercase">Start a project</p>
-            <h1 className="mt-4 font-display text-6xl leading-[0.92] font-extrabold tracking-tight uppercase md:text-7xl">
+            <h1 className="hero-shadow mt-4 font-display text-6xl leading-[0.92] font-extrabold tracking-tight uppercase md:text-7xl">
               Say hello<span className="text-signal">.</span>
             </h1>
           </Reveal>

@@ -121,6 +121,13 @@ body {
   color: transparent;
 }
 
+/* shared drop shadow for hero headlines, lifts them off busy scenes */
+.hero-shadow {
+  text-shadow:
+    0 3px 18px rgba(13, 13, 13, 1),
+    0 0 60px rgba(13, 13, 13, 0.9);
+}
+
 /* green aurora blobs drifting behind the service stack */
 .aurora-blob {
   position: absolute;

@@ -37,7 +37,7 @@ export default function Lab() {
       {/* variant info */}
       <div className="pointer-events-none absolute bottom-28 left-6 z-10 max-w-sm md:bottom-24 md:left-10">
         <p className="font-mono text-xs text-signal">{variant.num} / {String(LOGO_VARIANTS.length).padStart(2, '0')}</p>
-        <h1 className="mt-1 font-display text-4xl font-bold tracking-tight">{variant.name}</h1>
+        <h1 className="hero-shadow mt-1 font-display text-4xl font-bold tracking-tight">{variant.name}</h1>
         <p className="mt-2 text-sm text-muted">{variant.hint}</p>
       </div>
 

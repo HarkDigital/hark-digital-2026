@@ -73,7 +73,7 @@ export default function InsightPost() {
           </p>
         </Reveal>
         <Reveal delay={0.1}>
-          <h1 className="mt-4 max-w-4xl font-display text-4xl leading-[1.02] font-extrabold tracking-tight text-balance md:text-6xl">
+          <h1 className="hero-shadow mt-4 max-w-4xl font-display text-4xl leading-[1.02] font-extrabold tracking-tight text-balance md:text-6xl">
             {post.title}
           </h1>
         </Reveal>

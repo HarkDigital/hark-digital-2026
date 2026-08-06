@@ -40,7 +40,7 @@ function ColdOpen() {
       <p className="absolute top-28 font-mono text-[11px] tracking-[0.2em] text-muted uppercase">
         Hark Digital presents
       </p>
-      <h1 className="text-center font-display text-[clamp(26px,6.9vw,150px)] leading-[0.9] font-extrabold tracking-tight uppercase">
+      <h1 className="hero-shadow text-center font-display text-[clamp(26px,6.9vw,150px)] leading-[0.9] font-extrabold tracking-tight uppercase">
         {lines.map((l, i) => (
           <span key={l.text} className="block overflow-hidden">
             <motion.span

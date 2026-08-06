@@ -1,9 +1,11 @@
 import { Reveal } from '@/components/site/Reveal'
+import { SceneNetwork } from '@/components/scenes/SceneNetwork'
 
 export function Security() {
   return (
-    <section className="bg-signal text-ink">
-      <div className="mx-auto grid max-w-[1400px] items-center gap-10 px-5 py-20 md:grid-cols-[1fr_auto] md:px-10 md:py-28">
+    <section className="relative overflow-hidden bg-signal text-ink">
+      <SceneNetwork onSignal className="absolute inset-0" />
+      <div className="relative z-10 mx-auto grid max-w-[1400px] items-center gap-10 px-5 py-20 md:grid-cols-[1fr_auto] md:px-10 md:py-28">
         <div>
           <Reveal>
             <p className="font-mono text-xs font-medium tracking-[0.28em] uppercase">

@@ -13,7 +13,7 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto w-full max-w-[1400px] px-5 py-24 md:px-10">
         <Reveal>
-          <h1 className="text-center font-display text-[11vw] leading-[0.95] font-extrabold tracking-tight text-balance uppercase [text-shadow:0_3px_18px_rgba(13,13,13,1),0_0_60px_rgba(13,13,13,0.9)] md:text-[min(7.5vw,9rem)]">
+          <h1 className="hero-shadow text-center font-display text-[11vw] leading-[0.95] font-extrabold tracking-tight text-balance uppercase md:text-[min(7.5vw,9rem)]">
             Make the internet{' '}
             <span className="italic">listen.</span>
           </h1>
