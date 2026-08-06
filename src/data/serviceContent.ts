@@ -21,43 +21,43 @@ export interface ServiceContent {
 export const SERVICE_CONTENT: Record<string, ServiceContent> = {
   'software-development': {
     metaDescription:
-      'Custom software development in Philadelphia, client portals, dashboards, integrations, and automation built around how your business actually works. Hark Digital, est. 2016.',
+      'Custom CRM development in Philadelphia, plus client portals, dashboards, and integrations, built around how your business actually works. Hark Digital, est. 2016.',
     article: [
       {
-        heading: 'What custom software development actually means',
+        heading: 'What a custom CRM actually gets you',
         paragraphs: [
-          'Custom software development is the practice of building applications around your business processes instead of forcing your processes into off-the-shelf products. For most small and mid-sized companies that means four things: portals where customers log in and get things done, dashboards that pull scattered data into one honest picture, integrations that make existing tools talk to each other, and automations that eliminate repetitive manual work.',
-          'Hark Digital has been building this kind of software for Philadelphia businesses since 2016, for trucking companies, medical practices, manufacturers, real estate firms, and nonprofits. The pattern is almost always the same: somewhere in the business there is a spreadsheet being emailed around, a double-entry chore nobody likes, or a customer question that takes three phone calls to answer. That is where custom software pays for itself.',
+          'A CRM is where your business keeps its relationships: every lead, customer, job, quote, and follow-up. The big subscription CRMs assume your business works like everyone else’s, then charge per seat, per month, forever, for a system where most of the buttons are for somebody else. A custom CRM flips that: your pipeline stages, your fields, your reports, your language, with nothing you don’t use. Around it we build the rest of the toolkit, portals where customers log in and get things done, dashboards that pull scattered data into one honest picture, and integrations that make your existing tools talk to each other.',
+          'Hark Digital has been building CRMs and business software for Philadelphia companies since 2016, for trucking firms, medical practices, manufacturers, real estate companies, and nonprofits. The pattern is almost always the same: the customer list lives in a spreadsheet being emailed around, follow-ups live in someone’s head, and answering “where does this job stand?” takes three phone calls. That is exactly where a custom CRM pays for itself.',
         ],
       },
       {
-        heading: 'When custom beats off-the-shelf (and when it doesn’t)',
+        heading: 'When a custom CRM beats the big subscriptions (and when it doesn’t)',
         paragraphs: [
-          'Off-the-shelf software wins when your need is generic: accounting, email, payroll. Custom software wins when the workflow is the business: the way you quote jobs, schedule crews, intake patients, or track freight. If you have ever said “we do it differently here,” that difference is usually where packaged software starts fighting you and custom software starts earning.',
+          'The name-brand CRMs win when your sales process is generic and your team is big enough to absorb the per-seat pricing. A custom CRM wins when the workflow is the business: the way you quote jobs, schedule crews, intake patients, or track freight. If you have ever bent your process to fit a subscription tool, or you are paying every month for features nobody opens, that gap is where custom software starts earning. And unlike a subscription, you own it: no per-seat math, no rate hikes, no losing your data when you cancel.',
           'We tell clients honestly when they do not need us. Sometimes the right answer is a $30-a-month tool configured well, and we will say so. When custom is the right answer, we keep scope small and shippable: a working prototype in weeks, then short build cycles you can see. No year-long black boxes, no invoices for vaporware.',
         ],
       },
     ],
     faqs: [
       {
-        q: 'How much does custom software development cost?',
-        a: 'Small tools like a payment portal or intake form system typically start in the low four figures. Larger builds like customer portals, dashboards, and multi-system integrations scale with complexity. We scope in phases, so you get a working first version early and decide how far to go from there.',
+        q: 'How much does a custom CRM cost?',
+        a: 'Less than most people expect once you do the subscription math. A focused CRM for a small team typically costs about what two or three years of per-seat licenses would, except it fits your workflow exactly and you own it outright, no monthly bill that scales with headcount. We scope in phases, so you get a working first version early and decide how far to go.',
       },
       {
-        q: 'How long does it take to build custom software?',
-        a: 'A focused tool usually ships in two to six weeks. Bigger systems ship in phases: a clickable prototype in weeks, a usable first release within a couple of months, then improvements in short cycles. You see working software at every step.',
+        q: 'How long does it take to build a custom CRM?',
+        a: 'A focused CRM usually ships a usable first version in weeks, not months: a clickable prototype first, then short build cycles you can see. Bigger systems with portals and integrations ship in phases, and your team starts using the early version while we build the rest.',
+      },
+      {
+        q: 'Can you migrate our data from spreadsheets, HubSpot, or Salesforce?',
+        a: 'Yes. Most custom CRM projects start with a migration, out of a tangle of spreadsheets or out of a subscription CRM that never quite fit. We map your existing data into the new structure, clean it up on the way, and run both systems side by side until you trust the new one.',
       },
       {
         q: 'Can you connect the software we already use?',
-        a: 'Yes, integrations are most of our software work. We connect CRMs, accounting systems, payment processors, shipping tools, and websites so data entered once shows up everywhere it should. If a tool has an API (most modern tools do), we can usually integrate it.',
+        a: 'Yes, integrations are most of our software work. We connect accounting systems, payment processors, email, shipping tools, and websites so data entered once shows up everywhere it should. If a tool has an API (most modern tools do), we can usually integrate it.',
       },
       {
         q: 'Do we own the software you build?',
         a: 'Yes. You own the code, the data, and the accounts. We document what we build and hand over access. If we ever part ways, you are not held hostage, any competent developer can pick up where we left off.',
-      },
-      {
-        q: 'What technologies do you build with?',
-        a: 'Modern, boring-on-purpose technology: proven web frameworks, standard databases, and mainstream hosting. We choose stacks that thousands of developers know, so your software stays maintainable for years, not clever ones that impress other programmers.',
       },
       {
         q: 'Do you support the software after launch?',

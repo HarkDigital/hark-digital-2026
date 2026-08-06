@@ -12,8 +12,8 @@ export const SERVICES: Service[] = [
     slug: 'software-development',
     title: 'Software Development',
     blurb:
-      'Custom tools that help your company create, collect, and manage its data, client portals, payment systems, dashboards, and integrations that fit the way you actually work.',
-    tags: ['Custom Apps', 'Portals', 'APIs & Integrations', 'Data Management'],
+      'Custom CRMs, client portals, and dashboards built around how your business actually runs. Every lead, job, and customer in one system that fits like it was made for you, because it was.',
+    tags: ['Custom CRMs', 'Client Portals', 'Dashboards', 'Integrations'],
   },
   {
     num: '02',

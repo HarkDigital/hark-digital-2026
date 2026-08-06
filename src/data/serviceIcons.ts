@@ -17,7 +17,7 @@ interface ServiceIconSet {
 export const SERVICE_ICONS: Record<string, ServiceIconSet> = {
   'software-development': {
     service: 'code',
-    features: ['door', 'chart', 'link', 'zap'],
+    features: ['users', 'door', 'chart', 'zap'],
     process: ['ear', 'pencil', 'hammer', 'wrench'],
   },
   'web-design': {

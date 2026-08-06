@@ -24,23 +24,23 @@ export const SERVICE_PAGES: ServicePageData[] = [
     scene: 'dataflow',
     headline: 'Off-the-shelf never quite',
     headlineAccent: 'fits.',
-    lede: 'We build custom software that helps your company create, collect, and manage its data, portals, dashboards, payment systems, and integrations shaped around how you actually work, not how a vendor thinks you should.',
+    lede: 'We build custom CRMs and business software shaped around how your company actually works. Your leads, jobs, and customers tracked your way, portals your clients log into, dashboards that tell the truth, none of it rented from a vendor who thinks you should work their way.',
     features: [
       {
+        title: 'Custom CRMs',
+        text: 'Leads, customers, jobs, and follow-ups in a system shaped around your exact pipeline, not a bloated per-seat subscription you use ten percent of. Your stages, your fields, your reports, in your language. No license fees that grow with headcount, and no bending your process to fit someone else’s software.',
+      },
+      {
         title: 'Client & customer portals',
-        text: 'Give your customers a place to log in, pay invoices, upload files, and track progress, branded, secure, and yours.',
+        text: 'Give your customers a place to log in, pay invoices, upload files, and track progress, branded, secure, and yours. Fewer “just checking in” phone calls, fewer emailed attachments, and a business that looks as organized as it actually is. Your customers get answers at midnight without anyone picking up a phone.',
       },
       {
         title: 'Dashboards & data management',
-        text: 'Collect it once, see it clearly. We wire your data sources into dashboards that answer the questions you actually ask.',
+        text: 'Collect it once, see it clearly. We wire your data sources into dashboards that answer the questions you actually ask: what sold, what’s stuck, who owes what, and what needs attention today. One honest picture instead of six exports and a pivot table, current the moment you open it.',
       },
       {
-        title: 'Integrations & APIs',
-        text: 'Your CRM, your accounting, your website, talking to each other instead of at you. We connect the tools you already use.',
-      },
-      {
-        title: 'Workflow automation',
-        text: 'Repetitive work is a software problem. We automate the busywork so your team can do the parts humans are good at.',
+        title: 'Integrations & automation',
+        text: 'Your CRM, your accounting, your website, all talking to each other, with the repetitive busywork automated away. Data entered once shows up everywhere it belongs. Invoices generate themselves, follow-ups fire on schedule, and the double-entry chores your team quietly hates simply stop existing.',
       },
     ],
     process: [
@@ -56,7 +56,7 @@ export const SERVICE_PAGES: ServicePageData[] = [
       name: 'Pete Rose',
       company: 'The Home Hero',
     },
-    cta: 'Tell us what your spreadsheets are doing the hard way.',
+    cta: 'Still running your customer list out of spreadsheets? That’s a custom CRM waiting to happen.',
   },
   {
     slug: 'web-design',
@@ -69,19 +69,19 @@ export const SERVICE_PAGES: ServicePageData[] = [
     features: [
       {
         title: 'Design that converts',
-        text: 'Pretty is table stakes. Every layout decision points visitors toward the thing you want them to do next.',
+        text: 'Pretty is table stakes. Every layout decision points visitors toward the thing you want them to do next, call, book, buy, or ask. We design the path as carefully as the pixels, so the site doesn’t just get admired, it produces. A beautiful site that doesn’t convert is an expensive brochure.',
       },
       {
         title: 'Easy to update',
-        text: 'You own your content. We build on a CMS you can actually use, and we train you before we hand over the keys.',
+        text: 'You own your content. We build on a CMS you can actually use, and we train you before we hand over the keys. Change your hours, post a photo, swap a price, without calling a developer or filing a ticket. And if you’d rather never touch it, we handle the updates for you.',
       },
       {
         title: 'Responsive by default',
-        text: 'Phone, tablet, ultrawide monitor, one site that feels made for every screen, because it is.',
+        text: 'Phone, tablet, ultrawide monitor, one site that feels made for every screen, because it is. More than half your visitors arrive on a phone, so we design for thumbs first, test on real devices, and make sure menus, forms, and checkout feel effortless at every size.',
       },
       {
         title: 'Built to be found',
-        text: 'Clean structure, fast load times, and SEO fundamentals baked in from day one, not bolted on after.',
+        text: 'Clean structure, fast load times, and SEO fundamentals baked in from day one, not bolted on after. Search engines read a site much the way screen readers do, so semantic markup does double duty. You launch with the technical foundation already earning rankings instead of retrofitting it later.',
       },
     ],
     process: [
@@ -110,19 +110,19 @@ export const SERVICE_PAGES: ServicePageData[] = [
     features: [
       {
         title: 'Stores of any size',
-        text: 'Selling three products or three thousand, the store fits the catalog, not the other way around.',
+        text: 'Selling three products or three thousand, the store fits the catalog, not the other way around. Variations, bundles, digital goods, subscriptions, whatever your inventory actually looks like, structured right the first time, so adding product number 3,001 is a five-minute job instead of a project.',
       },
       {
         title: 'Payment portals',
-        text: 'Service businesses deserve online payments too. Deposits, invoices, and recurring billing without the phone tag.',
+        text: 'Service businesses deserve online payments too. Deposits, invoices, and recurring billing without the phone tag. Send a link, get paid, and let the books reconcile themselves. Your customers pay at midnight from the couch, and you stop trading voicemails about a credit card number.',
       },
       {
         title: 'Secure by default',
-        text: 'SSL, hardened checkout, and payment processors that never let card numbers touch your server.',
+        text: 'SSL, hardened checkout, and payment processors that never let card numbers touch your server, PCI compliance handled by architecture instead of paperwork. Your customers’ trust is the whole business, so we build checkout like it matters, because one breach costs more than everything it ever processed.',
       },
       {
         title: 'Analytics & insight',
-        text: 'Track sales and trends, spot your best sellers, and make decisions from data instead of gut feel.',
+        text: 'Track sales and trends, spot your best sellers, and make decisions from data instead of gut feel. Which products earn, which pages leak customers, where the next marketing dollar belongs. The store is constantly telling you what works, you just need to be set up to hear it.',
       },
     ],
     process: [
@@ -151,19 +151,19 @@ export const SERVICE_PAGES: ServicePageData[] = [
     features: [
       {
         title: 'Technical SEO',
-        text: 'Speed, structure, and clean markup, the foundation search engines reward and visitors feel.',
+        text: 'Speed, structure, and clean markup, the foundation search engines reward and visitors feel. Crawlability, schema, canonical tags, Core Web Vitals, the unglamorous plumbing that decides whether your content gets ranked or ignored. No amount of blogging outruns a technically broken site.',
       },
       {
         title: 'Local SEO',
-        text: 'Own your map pin. For Philadelphia businesses, showing up in "near me" searches is the whole game.',
+        text: 'Own your map pin. For Philadelphia businesses, showing up in "near me" searches is the whole game. We tune your Google Business Profile, keep your citations consistent, and structure pages around the neighborhoods you serve, so the customer three blocks away finds you instead of your competitor.',
       },
       {
         title: 'Content strategy',
-        text: 'Pages that answer real questions your customers actually type, written for humans, structured for machines.',
+        text: 'Pages that answer real questions your customers actually type, written for humans, structured for machines. No keyword-stuffed filler, no five-hundred-word posts about nothing. A publishing rhythm you can sustain, mapped to real queries, because one genuinely useful page outranks ten pieces of content-shaped noise.',
       },
       {
         title: 'GEO & AI discoverability',
-        text: 'AI assistants are the new front page. We structure your expertise so they quote you, not your competitor.',
+        text: 'AI assistants are the new front page. We structure your expertise so they quote you, not your competitor. Clear claims, structured data, and citable answers that ChatGPT, Gemini, and AI Overviews can lift verbatim. When your customers ask a machine, the machine should answer with you.',
       },
     ],
     process: [
@@ -187,19 +187,19 @@ export const SERVICE_PAGES: ServicePageData[] = [
     features: [
       {
         title: 'Core Web Vitals',
-        text: 'LCP, INP, and CLS are Google ranking factors. We get all three into the green so search rewards your site instead of burying it.',
+        text: 'LCP, INP, and CLS are Google ranking factors. We get all three into the green so search rewards your site instead of burying it. That means measuring real field data, not just lab runs, and fixing the layout shifts and slow renders your actual visitors feel on actual connections.',
       },
       {
         title: 'PageSpeed & GTmetrix',
-        text: 'We chase the exact issues those tools flag, oversized images, heavy scripts, render-blocking code, missing caching, until the numbers turn green and stay there.',
+        text: 'We chase the exact issues those tools flag, oversized images, heavy scripts, render-blocking code, missing caching, until the numbers turn green and stay there. And you get the before-and-after scores in writing, so the improvement isn’t a feeling, it’s a receipt.',
       },
       {
         title: 'Fast on real phones',
-        text: 'Lab scores are easy; a cheap Android on cell data is the real test. We optimize for the visitor you are actually losing, not just your fast laptop.',
+        text: 'Lab scores are easy; a cheap Android on cell data is the real test. We optimize for the visitor you are actually losing, not just your fast laptop. Images sized for the screen that loads them, scripts deferred until they matter, and a first paint that lands before patience runs out.',
       },
       {
         title: 'Speed that lasts',
-        text: 'Sites rot as plugins and content pile up. We set up caching, compression, a CDN, and monitoring so it stays fast long after we leave.',
+        text: 'Sites rot as plugins and content pile up. We set up caching, compression, a CDN, and monitoring so it stays fast long after we leave. And we leave notes, so the next plugin someone installs doesn’t quietly undo three seconds of hard-won speed.',
       },
     ],
     process: [
@@ -223,19 +223,19 @@ export const SERVICE_PAGES: ServicePageData[] = [
     features: [
       {
         title: 'Opportunity audit',
-        text: 'We map your workflows and show you exactly where AI helps, and where it honestly doesn’t. Plain English, no buzzwords.',
+        text: 'We map your workflows and show you exactly where AI helps, and where it honestly doesn’t. Plain English, no buzzwords. You get a short list ranked by payoff: what to automate now, what to watch, and what to ignore no matter how loud the vendor pitch gets.',
       },
       {
         title: 'Custom AI tools',
-        text: 'Assistants trained on your documents, quote generators, intake bots, built for your business, not rented from a demo.',
+        text: 'Assistants trained on your documents, quote generators, intake bots, built for your business, not rented from a demo. Your data stays yours, the tool speaks your language, and it plugs into the systems you already run instead of becoming another tab nobody opens.',
       },
       {
         title: 'Workflow automation',
-        text: 'Connect AI to the tools you already use so the paperwork writes itself while you sleep.',
+        text: 'Connect AI to the tools you already use so the paperwork writes itself while you sleep. Follow-up emails drafted, documents summarized, data moved between systems without retyping. The measure isn’t cleverness, it’s hours: if it doesn’t give your week time back, we don’t build it.',
       },
       {
         title: 'AI-ready presence',
-        text: 'Paired with our GEO work: make sure AI assistants describe your business accurately, and recommend you.',
+        text: 'Paired with our GEO work: make sure AI assistants describe your business accurately, and recommend you. When a customer asks ChatGPT who to call, the answer comes from how clearly your site states what you do, where, and for whom. We make that answer yours.',
       },
     ],
     process: [
@@ -259,19 +259,19 @@ export const SERVICE_PAGES: ServicePageData[] = [
     features: [
       {
         title: 'Real estate',
-        text: 'Listings with aerial photos sell faster. Show the property, the lot, and the neighborhood in one frame.',
+        text: 'Listings with aerial photos sell faster. Show the property, the lot, and the neighborhood in one frame. Buyers scroll past flat photos they’ve seen a hundred times; a clean aerial tells the whole story in one image, acreage, privacy, position, before they ever read the description.',
       },
       {
         title: 'Construction progress',
-        text: 'Weekly flyovers turn "how’s the site coming?" into a photo timeline your clients and lenders love.',
+        text: 'Weekly flyovers turn "how’s the site coming?" into a photo timeline your clients and lenders love. Same angle, same altitude, every week, an honest visual record for draw requests, marketing, and the inevitable conversation about what was done when. The site documents itself.',
       },
       {
         title: 'Inspections',
-        text: 'Roofs, towers, and gutters without ladders or lifts. High-resolution imagery, zero risk.',
+        text: 'Roofs, towers, and gutters without ladders or lifts. High-resolution imagery, zero risk. Find the cracked flashing or the clogged gutter in minutes instead of renting a lift or putting a person on a wet roof. Same-day images, zoomable down to the shingle.',
       },
       {
         title: 'Cinematic production',
-        text: '4K aerial video for brand films, events, and action sports, footage that makes people stop scrolling.',
+        text: '4K aerial video for brand films, events, and action sports, footage that makes people stop scrolling. Planned shot lists, smooth camera moves, and color-graded delivery cut for where it will live. The difference between a drone clip and a cinematic one is the pilot, not the drone.',
       },
     ],
     process: [
@@ -295,19 +295,19 @@ export const SERVICE_PAGES: ServicePageData[] = [
     features: [
       {
         title: 'Emergency response',
-        text: 'Fast triage to contain the damage. Every hour a hacked site stays up costs you trust and traffic.',
+        text: 'Fast triage to contain the damage. Every hour a hacked site stays up costs you trust and traffic. We isolate the infection, get a holding page up if needed, and start the cleanup the same day you call, because attackers don’t keep business hours and neither does your reputation.',
       },
       {
         title: 'Malware removal',
-        text: 'We find every backdoor, injected script, and rogue admin account, and the hole they came through.',
+        text: 'We find every backdoor, injected script, and rogue admin account, and the hole they came through. Surface cleanups get reinfected within days; we clean the file system and the database, then close the entry point, so the same door doesn’t swing open again next month.',
       },
       {
         title: 'Blocklist removal',
-        text: 'We clear the "this site may be hacked" warnings from Google Safe Browsing and get your reputation back.',
+        text: 'We clear the "this site may be hacked" warnings from Google Safe Browsing and get your reputation back. Search warnings and email blacklists linger long after the malware is gone unless someone files the reviews and proves the cleanup. We handle that paperwork until every warning drops.',
       },
       {
         title: 'Post-breach hardening',
-        text: 'The cleanup ends with a locked door: patched software, tightened permissions, and monitoring in place.',
+        text: 'The cleanup ends with a locked door: patched software, tightened permissions, and monitoring in place. Most sites get hacked through known holes in outdated software, so we close them, rotate every credential, and leave a watchman behind. Getting hacked twice is a choice.',
       },
     ],
     process: [
@@ -336,19 +336,19 @@ export const SERVICE_PAGES: ServicePageData[] = [
     features: [
       {
         title: 'Hardening',
-        text: 'Locked-down logins, least-privilege accounts, and a smaller attack surface from day one.',
+        text: 'Locked-down logins, least-privilege accounts, and a smaller attack surface from day one. Two-factor authentication, strong password policy, and admin access limited to the people who actually need it. Most attacks are bots trying door handles; we simply give them fewer handles to try.',
       },
       {
         title: 'Monitoring & alerts',
-        text: 'Round-the-clock watch for file changes, suspicious logins, and downtime, with a human who responds.',
+        text: 'Round-the-clock watch for file changes, suspicious logins, and downtime, with a human who responds. Not a dashboard nobody checks, an actual notification chain that ends with someone fixing the problem, usually before you or your customers notice anything happened at all.',
       },
       {
         title: 'Backups that restore',
-        text: 'A backup you’ve never tested is a hope, not a plan. Ours restore, we rehearse it.',
+        text: 'A backup you’ve never tested is a hope, not a plan. Ours restore, we rehearse it. Off-site copies on a schedule matched to how often your site changes, with restore drills, so the worst Tuesday of your year costs you an hour of content, not the whole site.',
       },
       {
         title: 'Updates & patching',
-        text: 'Most breaches walk through known holes. We keep your software patched before attackers try the handle.',
+        text: 'Most breaches walk through known holes. We keep your software patched before attackers try the handle. Updates applied on a schedule, with backups first and testing after, so a patch never becomes its own outage. Boring, monthly, and the highest-value security habit there is.',
       },
     ],
     process: [
@@ -372,19 +372,19 @@ export const SERVICE_PAGES: ServicePageData[] = [
     features: [
       {
         title: 'Real WCAG audits',
-        text: 'Automated scans catch maybe a third of the problems. We test the rest by hand, keyboard only, screen reader on, zoomed to 200%, mapped to WCAG 2.2.',
+        text: 'Automated scans catch maybe a third of the problems. We test the rest by hand, keyboard only, screen reader on, zoomed to 200%, mapped to WCAG 2.2. You get a plain-English report ranked by severity and legal exposure, not a wall of jargon from a browser plugin.',
       },
       {
         title: 'Fixes, not overlays',
-        text: 'Accessibility widgets don’t make sites accessible, and plaintiffs’ lawyers know it. We fix the actual code: contrast, labels, structure, and focus.',
+        text: 'Accessibility widgets don’t make sites accessible, and plaintiffs’ lawyers know it. We fix the actual code: contrast, labels, structure, and focus. Real fixes hold up under real assistive technology, and they usually make the site faster and better-ranked as a side effect.',
       },
       {
         title: 'Demand-letter defense',
-        text: 'Thousands of ADA website lawsuits are filed every year, and small businesses are the easy targets. Documented conformance makes yours a hard one.',
+        text: 'Thousands of ADA website lawsuits are filed every year, and small businesses are the easy targets. Documented conformance makes yours a hard one. An audit trail, an accessibility statement, and a site that passes the scan a plaintiff’s firm runs first, the cheapest legal protection you can buy.',
       },
       {
         title: 'Accessible from day one',
-        text: 'On new builds, accessibility is baked into the design and markup from the first wireframe, cheaper than retrofitting and better for SEO too.',
+        text: 'On new builds, accessibility is baked into the design and markup from the first wireframe, cheaper than retrofitting and better for SEO too. Palettes chosen for contrast, components that work by keyboard, forms that announce themselves properly. Done right, it’s invisible, just a site everyone can use.',
       },
     ],
     process: [
@@ -408,19 +408,19 @@ export const SERVICE_PAGES: ServicePageData[] = [
     features: [
       {
         title: 'Builds done right',
-        text: 'Lean custom themes instead of a 40-plugin pileup. Fast, editable, and free of the page-builder bloat that slows everything down.',
+        text: 'Lean custom themes instead of a 40-plugin pileup. Fast, editable, and free of the page-builder bloat that slows everything down. You get the block editor for day-to-day changes and a codebase a future developer will thank us for, not a maze only we can maintain.',
       },
       {
         title: 'Plugin rescue',
-        text: 'Conflicts, abandonware, and five plugins doing one job. We audit the pile, keep what earns its place, and replace the rest.',
+        text: 'Conflicts, abandonware, and five plugins doing one job. We audit the pile, keep what earns its place, and replace the rest. Every plugin is code you didn’t write running on your server, so fewer, better ones mean fewer updates, fewer conflicts, and fewer 2 a.m. surprises.',
       },
       {
         title: 'Speed & Core Web Vitals',
-        text: 'WordPress can be genuinely fast. Caching, image optimization, database cleanup, and theme surgery until the scores go green.',
+        text: 'WordPress can be genuinely fast. Caching, image optimization, database cleanup, and theme surgery until the scores go green. Most slow WordPress sites are carrying years of accumulated weight, and shedding it is usually the cheapest dramatic improvement a site can buy.',
       },
       {
         title: 'Hardening & care plans',
-        text: 'Most hacked sites we clean are WordPress running old plugins. Updates, backups, and monitoring, handled monthly so it never gets there.',
+        text: 'Most hacked sites we clean are WordPress running old plugins. Updates, backups, and monitoring, handled monthly so it never gets there. A care plan costs a fraction of a single emergency rescue, which is exactly the point: boring maintenance is how disasters stay hypothetical.',
       },
     ],
     process: [
