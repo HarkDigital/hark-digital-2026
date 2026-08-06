@@ -11,6 +11,7 @@ import { SceneShield } from './SceneShield'
 import { SceneFocus } from './SceneFocus'
 import { SceneBlocks } from './SceneBlocks'
 import { SceneSift } from './SceneSift'
+import { SceneNetwork } from './SceneNetwork'
 
 export const SCENES: Record<string, ComponentType<{ className?: string }>> = {
   dataflow: SceneDataflow,
@@ -25,4 +26,5 @@ export const SCENES: Record<string, ComponentType<{ className?: string }>> = {
   focus: SceneFocus,
   blocks: SceneBlocks,
   sift: SceneSift,
+  network: SceneNetwork,
 }

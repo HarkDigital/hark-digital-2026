@@ -2,7 +2,7 @@ export interface ServicePageData {
   slug: string
   num: string
   title: string
-  scene: 'dataflow' | 'blueprint' | 'commerce' | 'radar' | 'velocity' | 'neural' | 'aerial' | 'glitch' | 'shield' | 'focus' | 'blocks' | 'sift'
+  scene: 'dataflow' | 'blueprint' | 'commerce' | 'radar' | 'velocity' | 'neural' | 'aerial' | 'glitch' | 'shield' | 'focus' | 'blocks' | 'sift' | 'network'
   headline: string
   /** part of the headline rendered in the signal color */
   headlineAccent?: string
@@ -288,7 +288,7 @@ export const SERVICE_PAGES: ServicePageData[] = [
     slug: 'hack-remediation',
     num: '08',
     title: 'Hack Remediation',
-    scene: 'glitch',
+    scene: 'network',
     headline: 'Breathe. Then',
     headlineAccent: 'call us.',
     lede: 'Defaced homepage, spam redirects, Google’s red warning screen, a hacked site feels like a break-in. We find the breach, remove the infection, restore your site, and lock the door on the way out.',
