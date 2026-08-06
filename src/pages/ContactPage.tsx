@@ -4,6 +4,7 @@ import { Nav } from '@/components/site/Nav'
 import { Cursor } from '@/components/site/Cursor'
 import { Reveal } from '@/components/site/Reveal'
 import { LogoMark } from '@/components/site/LogoMark'
+import { Contact } from '@/sections/Contact'
 import { cn } from '@/lib/utils'
 
 const SERVICE_OPTIONS = [
@@ -214,20 +215,7 @@ export default function ContactPage() {
         </Reveal>
       </section>
 
-      {/* slim footer */}
-      <footer className="border-t border-line">
-        <div className="mx-auto flex max-w-[1400px] flex-col items-center justify-between gap-3 px-5 py-8 md:flex-row md:px-10">
-          <Link to="/" className="flex items-center gap-3">
-            <LogoMark className="h-7 w-7 text-paper transition-colors hover:text-signal" />
-            <span className="font-display text-sm font-bold tracking-[0.18em] uppercase">
-              Hark<span className="text-signal">.</span><span className="text-muted">Digital</span>
-            </span>
-          </Link>
-          <p className="font-mono text-[10px] tracking-[0.2em] text-muted uppercase">
-            © {new Date().getFullYear()} Hark Digital Design
-          </p>
-        </div>
-      </footer>
+      <Contact />
     </main>
   )
 }

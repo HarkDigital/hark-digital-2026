@@ -13,24 +13,20 @@ export function Contact() {
       <div className="relative z-10 mx-auto flex min-h-[80vh] max-w-[1400px] flex-col justify-between px-5 py-20 md:px-10">
         <div className="flex flex-1 flex-col items-center justify-center py-16 text-center">
           <Reveal>
-            <p className="font-mono text-xs tracking-[0.28em] text-muted uppercase">
-              Have a project? Been hacked? Need eyes in the sky?
-            </p>
-          </Reveal>
-          <Reveal delay={0.1}>
             <Link
               to="/contact"
-              className="mt-6 block font-display text-[14vw] leading-none font-extrabold tracking-tight uppercase transition-colors duration-300 hover:text-signal md:text-[9vw]"
+              className="block font-display text-[14vw] leading-none font-extrabold tracking-tight uppercase transition-colors duration-300 hover:text-signal md:text-[9vw]"
             >
               Say hello<span className="text-signal">.</span>
             </Link>
           </Reveal>
-          <Reveal delay={0.2}>
-            <p className="mt-8 font-mono text-sm tracking-[0.18em] text-muted">
-              <a href="mailto:mike@hark.digital" className="transition-colors hover:text-signal">
-                mike@hark.digital
-              </a>
-            </p>
+          <Reveal delay={0.15}>
+            <Link
+              to="/contact"
+              className="mt-10 inline-block rounded-full bg-signal px-8 py-4 font-mono text-xs font-medium tracking-[0.18em] text-ink uppercase shadow-[0_6px_28px_rgba(13,13,13,0.9)] transition-transform hover:scale-105"
+            >
+              Contact
+            </Link>
           </Reveal>
         </div>
 

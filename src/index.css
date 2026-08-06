@@ -139,13 +139,13 @@ body {
 }
 @keyframes aurora-drift {
   0% {
-    transform: translate3d(-22%, -12%, 0) scale(0.85) rotate(-9deg);
+    transform: translate3d(-45%, -5%, 0) scale(0.9) rotate(-12deg);
   }
   50% {
-    transform: translate3d(8%, 16%, 0) scale(1.28) rotate(3deg);
+    transform: translate3d(15%, 7%, 0) scale(1.2) rotate(5deg);
   }
   100% {
-    transform: translate3d(26%, -8%, 0) scale(1.05) rotate(11deg);
+    transform: translate3d(50%, -4%, 0) scale(1) rotate(14deg);
   }
 }
 @keyframes aurora-pulse {

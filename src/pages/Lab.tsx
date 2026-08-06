@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { LOGO_VARIANTS } from '@/components/logo'
+import { Contact } from '@/sections/Contact'
 import { cn } from '@/lib/utils'
 
 /**
@@ -18,6 +19,7 @@ export default function Lab() {
   const Scene = variant.Component
 
   return (
+    <main className="bg-ink text-paper">
     <div className="relative h-dvh w-full overflow-hidden bg-ink">
       <Scene key={variant.id} className="absolute inset-0" />
 
@@ -59,5 +61,7 @@ export default function Lab() {
         </div>
       </nav>
     </div>
+    <Contact />
+    </main>
   )
 }

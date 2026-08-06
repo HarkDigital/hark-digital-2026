@@ -166,16 +166,16 @@ export function Services() {
 
   return (
     <section id="services" className="relative mx-auto max-w-[1400px] px-5 py-24 md:px-10 md:py-36">
-      {/* aurora backdrop, behind the deck */}
+      {/* aurora curtains, behind the deck */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0">
-        <div className="aurora-blob top-[1%] left-[-14%] h-[48rem] w-[54rem] max-w-[110vw]" />
-        <div className="aurora-blob top-[12%] right-[-16%] h-[50rem] w-[56rem] max-w-[110vw] [animation-delay:-5s,-3s] [animation-duration:16s,8s]" />
-        <div className="aurora-blob top-[26%] left-[-10%] h-[48rem] w-[52rem] max-w-[110vw] [animation-delay:-9s,-5s] [animation-duration:14s,9s]" />
-        <div className="aurora-blob top-[38%] right-[-12%] h-[52rem] w-[58rem] max-w-[110vw] [animation-delay:-12s,-2s] [animation-duration:18s,7s]" />
-        <div className="aurora-blob top-[52%] left-[-8%] h-[48rem] w-[54rem] max-w-[110vw] [animation-delay:-3s,-6s] [animation-duration:15s,8s]" />
-        <div className="aurora-blob top-[64%] right-[-14%] h-[50rem] w-[56rem] max-w-[110vw] [animation-delay:-7s,-1s] [animation-duration:17s,9s]" />
-        <div className="aurora-blob top-[78%] left-[-12%] h-[48rem] w-[52rem] max-w-[110vw] [animation-delay:-11s,-4s] [animation-duration:13s,7s]" />
-        <div className="aurora-blob right-[0%] bottom-[-3%] h-[46rem] w-[54rem] max-w-[110vw] [animation-delay:-14s,-2s] [animation-duration:19s,8s]" />
+        <div className="aurora-blob top-[0%] left-[-6%] h-[58rem] w-[20rem]" />
+        <div className="aurora-blob top-[10%] right-[-4%] h-[62rem] w-[24rem] [animation-delay:-5s,-3s] [animation-duration:16s,8s]" />
+        <div className="aurora-blob top-[24%] left-[10%] h-[54rem] w-[17rem] [animation-delay:-9s,-5s] [animation-duration:14s,9s]" />
+        <div className="aurora-blob top-[36%] right-[14%] h-[60rem] w-[21rem] [animation-delay:-12s,-2s] [animation-duration:18s,7s]" />
+        <div className="aurora-blob top-[50%] left-[-4%] h-[58rem] w-[22rem] [animation-delay:-3s,-6s] [animation-duration:15s,8s]" />
+        <div className="aurora-blob top-[62%] right-[-6%] h-[62rem] w-[25rem] [animation-delay:-7s,-1s] [animation-duration:17s,9s]" />
+        <div className="aurora-blob top-[76%] left-[12%] h-[54rem] w-[18rem] [animation-delay:-11s,-4s] [animation-duration:13s,7s]" />
+        <div className="aurora-blob right-[8%] bottom-[-4%] h-[56rem] w-[22rem] [animation-delay:-14s,-2s] [animation-duration:19s,8s]" />
       </div>
 
       <Reveal className="relative">
