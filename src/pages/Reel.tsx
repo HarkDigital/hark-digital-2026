@@ -16,6 +16,8 @@ import { Cursor } from '@/components/site/Cursor'
 import { Reveal } from '@/components/site/Reveal'
 import { Contact } from '@/sections/Contact'
 import { WORK, type WorkItem } from '@/data/work'
+import { INDUSTRY_ICONS } from '@/data/serviceIcons'
+import { Icon } from '@/components/site/Icons'
 import { asset, cn } from '@/lib/utils'
 
 const FEATURED_IDS = ['scribewise', 'acctrans', 'reliablepower'] as const
@@ -282,9 +284,11 @@ function EndCredits() {
                   i === 0 && 'border-t'
                 )}
               >
-                <span className="font-mono text-xs tracking-[0.2em] text-muted transition-colors group-hover:text-signal">
-                  {pad(i + 1)}
-                </span>
+                <Icon
+                  name={INDUSTRY_ICONS[w.industry] ?? 'layout'}
+                  size={22}
+                  className="text-muted transition-colors group-hover:text-signal"
+                />
                 <span className="flex min-w-0 items-center gap-3 transition-transform duration-300 group-hover:translate-x-2">
                   <img
                     src={asset(`work/${w.id}.webp`)}
@@ -295,7 +299,7 @@ function EndCredits() {
                     className="h-10 w-16 shrink-0 rounded-sm border border-line object-cover object-top lg:hidden"
                   />
                   <span className="min-w-0">
-                    <span className="block truncate font-display text-[clamp(20px,6vw,28px)] leading-[1.05] font-extrabold tracking-tight uppercase transition-colors group-hover:text-signal lg:text-[clamp(24px,2.6vw,44px)]">
+                    <span className="block font-display text-[clamp(20px,6vw,28px)] leading-[1.05] font-extrabold tracking-tight uppercase transition-colors group-hover:text-signal lg:text-[clamp(22px,2.1vw,36px)]">
                       {w.name}
                     </span>
                     <span className="mt-0.5 block font-mono text-[10px] tracking-[0.16em] text-muted uppercase lg:hidden">

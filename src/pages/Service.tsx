@@ -7,6 +7,8 @@ import { Contact } from '@/sections/Contact'
 import { SCENES } from '@/components/scenes'
 import { SERVICE_PAGES } from '@/data/servicePages'
 import { SERVICE_CONTENT } from '@/data/serviceContent'
+import { SERVICE_ICONS } from '@/data/serviceIcons'
+import { Icon } from '@/components/site/Icons'
 
 const DEFAULT_DESCRIPTION =
   'Hark Digital · software development, web design, ecommerce, SEO/GEO, security, ADA accessibility, and aerial media. From publicly traded companies to mom-and-pop pizza shops.'
@@ -117,10 +119,12 @@ export default function Service() {
           {page.features.map((f, i) => (
             <Reveal key={f.title} delay={Math.min(i * 0.06, 0.2)} className="h-full">
               <div className="group h-full bg-ink p-8 transition-colors duration-300 hover:bg-ink-2 md:p-10">
-                <span className="font-mono text-xs text-muted transition-colors group-hover:text-signal">
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-                <h2 className="mt-3 font-display text-2xl font-bold tracking-tight">{f.title}</h2>
+                <Icon
+                  name={SERVICE_ICONS[page.slug].features[i]}
+                  size={26}
+                  className="text-muted transition-colors duration-300 group-hover:text-signal"
+                />
+                <h2 className="mt-4 font-display text-2xl font-bold tracking-tight">{f.title}</h2>
                 <p className="mt-3 leading-relaxed text-paper/65">{f.text}</p>
               </div>
             </Reveal>
@@ -156,9 +160,7 @@ export default function Service() {
                 <span className="absolute inset-x-0 top-0 h-px bg-line" />
                 <span className="absolute inset-x-0 top-0 h-px origin-left scale-x-0 bg-signal shadow-[0_0_10px_var(--color-signal)] transition-transform duration-500 ease-out group-hover:scale-x-100" />
                 <div className="flex items-center gap-3">
-                  <span className="font-mono text-xs text-signal transition-all duration-300 group-hover:tracking-[0.25em]">
-                    {String(i + 1).padStart(2, '0')}
-                  </span>
+                  <Icon name={SERVICE_ICONS[page.slug].process[i]} size={22} className="text-signal" />
                   <span className="h-1.5 w-1.5 rotate-45 scale-0 bg-signal opacity-0 transition-all duration-300 group-hover:scale-100 group-hover:opacity-100" />
                 </div>
                 <h3 className="mt-2 font-display text-xl font-bold tracking-tight transition-colors duration-300 group-hover:text-signal">

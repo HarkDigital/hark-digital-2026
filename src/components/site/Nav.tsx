@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { LogoMark } from './LogoMark'
+import { Icon } from './Icons'
 import { SERVICES } from '@/data/services'
 import { cn } from '@/lib/utils'
 
@@ -174,12 +175,12 @@ export function Nav() {
           onClick={() => setOpen(false)}
           className="border-b border-line py-4 font-display text-3xl font-bold"
         >
-          <span className="mr-4 font-mono text-sm text-signal">01</span>
+          <Icon name="grid" size={18} className="mr-4 inline-block align-baseline text-signal" />
           Work
         </Link>
         <div className="border-b border-line py-4">
           <p className="font-display text-3xl font-bold">
-            <span className="mr-4 font-mono text-sm text-signal">02</span>
+            <Icon name="sparkle" size={18} className="mr-4 inline-block align-baseline text-signal" />
             Services
           </p>
           <div className="mt-4 grid grid-cols-2 gap-x-4 gap-y-3 pl-9">
@@ -200,7 +201,7 @@ export function Nav() {
           onClick={() => setOpen(false)}
           className="border-b border-line py-4 font-display text-3xl font-bold"
         >
-          <span className="mr-4 font-mono text-sm text-signal">03</span>
+          <Icon name="doc" size={18} className="mr-4 inline-block align-baseline text-signal" />
           Insights
         </Link>
         <a
@@ -208,7 +209,7 @@ export function Nav() {
           onClick={() => setOpen(false)}
           className="border-b border-line py-4 font-display text-3xl font-bold"
         >
-          <span className="mr-4 font-mono text-sm text-signal">04</span>
+          <Icon name="users" size={18} className="mr-4 inline-block align-baseline text-signal" />
           Clients
         </a>
         <Link
@@ -216,7 +217,7 @@ export function Nav() {
           onClick={() => setOpen(false)}
           className="border-b border-line py-4 font-display text-3xl font-bold"
         >
-          <span className="mr-4 font-mono text-sm text-signal">05</span>
+          <Icon name="send" size={18} className="mr-4 inline-block align-baseline text-signal" />
           Contact
         </Link>
         <Link
