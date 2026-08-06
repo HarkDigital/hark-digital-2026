@@ -121,26 +121,39 @@ body {
   color: transparent;
 }
 
-/* soft green aurora blobs drifting behind the service stack */
+/* green aurora blobs drifting behind the service stack */
 .aurora-blob {
   position: absolute;
   border-radius: 9999px;
   background: radial-gradient(
     closest-side,
-    rgba(0, 255, 133, 0.17),
-    rgba(0, 255, 133, 0.05) 55%,
-    transparent 72%
+    rgba(0, 255, 133, 0.42),
+    rgba(0, 255, 133, 0.16) 52%,
+    transparent 74%
   );
-  filter: blur(48px);
-  animation: aurora-drift 26s ease-in-out infinite alternate;
-  will-change: transform;
+  filter: blur(52px);
+  animation:
+    aurora-drift 13s ease-in-out infinite alternate,
+    aurora-pulse 7s ease-in-out infinite alternate;
+  will-change: transform, opacity;
 }
 @keyframes aurora-drift {
+  0% {
+    transform: translate3d(-22%, -12%, 0) scale(0.85) rotate(-9deg);
+  }
+  50% {
+    transform: translate3d(8%, 16%, 0) scale(1.28) rotate(3deg);
+  }
+  100% {
+    transform: translate3d(26%, -8%, 0) scale(1.05) rotate(11deg);
+  }
+}
+@keyframes aurora-pulse {
   from {
-    transform: translate3d(-7%, -5%, 0) scale(1) rotate(-5deg);
+    opacity: 0.65;
   }
   to {
-    transform: translate3d(7%, 9%, 0) scale(1.18) rotate(6deg);
+    opacity: 1;
   }
 }
 @media (prefers-reduced-motion: reduce) {
