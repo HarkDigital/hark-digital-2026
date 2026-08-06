@@ -120,3 +120,31 @@ body {
   -webkit-text-stroke: 1px rgba(0, 255, 133, 0.6);
   color: transparent;
 }
+
+/* soft green aurora blobs drifting behind the service stack */
+.aurora-blob {
+  position: absolute;
+  border-radius: 9999px;
+  background: radial-gradient(
+    closest-side,
+    rgba(0, 255, 133, 0.17),
+    rgba(0, 255, 133, 0.05) 55%,
+    transparent 72%
+  );
+  filter: blur(48px);
+  animation: aurora-drift 26s ease-in-out infinite alternate;
+  will-change: transform;
+}
+@keyframes aurora-drift {
+  from {
+    transform: translate3d(-7%, -5%, 0) scale(1) rotate(-5deg);
+  }
+  to {
+    transform: translate3d(7%, 9%, 0) scale(1.18) rotate(6deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .aurora-blob {
+    animation: none;
+  }
+}

@@ -16,7 +16,7 @@ import { Reveal } from '@/components/site/Reveal'
 
 const COUNT = SERVICES.length
 const GAP = 24 // matches gap-6 on the stack
-const stickyTop = (i: number) => 88 + i * 8
+const stickyTop = (i: number) => 84 + i * 16
 
 /** the slice of container scroll progress during which card i is covered */
 interface Window {
@@ -165,8 +165,16 @@ export function Services() {
   }, [])
 
   return (
-    <section id="services" className="mx-auto max-w-[1400px] px-5 py-24 md:px-10 md:py-36">
-      <Reveal>
+    <section id="services" className="relative mx-auto max-w-[1400px] px-5 py-24 md:px-10 md:py-36">
+      {/* aurora backdrop, behind the deck */}
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+        <div className="aurora-blob top-[2%] left-[-12%] h-[42rem] w-[46rem] max-w-[95vw]" />
+        <div className="aurora-blob top-[28%] right-[-16%] h-[48rem] w-[52rem] max-w-[95vw] [animation-delay:-9s] [animation-duration:32s]" />
+        <div className="aurora-blob top-[58%] left-[4%] h-[40rem] w-[44rem] max-w-[95vw] [animation-delay:-18s] [animation-duration:29s]" />
+        <div className="aurora-blob bottom-[-4%] right-[8%] h-[38rem] w-[46rem] max-w-[95vw] [animation-delay:-25s] [animation-duration:36s]" />
+      </div>
+
+      <Reveal className="relative">
         <p className="font-mono text-xs tracking-[0.28em] text-signal uppercase">What we do</p>
         <h2 className="mt-4 max-w-3xl font-display text-4xl leading-tight font-bold tracking-tight md:text-6xl">
           Eleven ways to be heard.
